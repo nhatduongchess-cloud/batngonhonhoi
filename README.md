@@ -16,4 +16,4 @@ Khảo sát cuối thiệp có hai câu hỏi và thanh điểm 0–100. Khi có
 
 Tên được dùng để cá nhân hóa thiệp, không phải tài khoản có mật khẩu. Dữ liệu phản hồi được lưu trên Google Sheets, không nằm trong repository này.
 
-Để chạy trên GitHub Pages, chọn **Settings → Pages → Deploy from a branch → main → /(root)**.
+Website tự động xuất bản khi cập nhật nhánh `main` bằng workflow **Publish Liber website**. Trong **Settings → Pages**, nguồn xuất bản là **GitHub Actions**. Có thể chạy lại tại **Actions → Publish Liber website → Run workflow**.
