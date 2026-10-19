@@ -10,8 +10,11 @@ Khảo sát cuối thiệp có hai câu hỏi và thanh điểm 0–100. Khi có
 
 ## Cấu trúc
 
-- `index.html`: giao diện và chức năng website.
-- `assets/`: ảnh, video và font phục vụ trang.
+- `index.html`: khung giao diện (HTML) của website.
+- `css/styles.css`: toàn bộ định dạng giao diện.
+- `js/app.js`: chức năng website.
+- `js/data/recipients.js`: danh sách người nhận (tên, ảnh, lời chúc, giao diện thiệp). Sửa tên hoặc lời chúc tại đây.
+- `assets/`: ảnh, video và font phục vụ trang; giấy phép font ở `assets/fonts/OFL.txt`.
 - `.nojekyll`: phục vụ các tệp tĩnh trực tiếp trên GitHub Pages.
 
 Tên được dùng để cá nhân hóa thiệp, không phải tài khoản có mật khẩu. Dữ liệu phản hồi được lưu trên Google Sheets, không nằm trong repository này.

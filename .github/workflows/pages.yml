@@ -29,8 +29,7 @@ jobs:
       - name: Prepare static website
         run: |
           mkdir _site
-          cp index.html .nojekyll _site/
-          cp -r assets _site/assets
+          cp -r index.html .nojekyll css js assets _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
