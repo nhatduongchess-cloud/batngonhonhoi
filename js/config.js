@@ -11,8 +11,8 @@ export const GREETING_VIDEO = 'assets/5a142c5696d4b297a790.mp4';
 // spaces or accents (GitHub Pages treats "Bai-1.mp3" and "bai-1.mp3" as different).
 // Leave the list empty to use the built-in synthesized melody.
 export const MUSIC_PLAYLIST = [
-  // { src: 'assets/music/bai-1.mp3', title: 'Tên bài hát 1' },
-  // { src: 'assets/music/bai-2.mp3', title: 'Tên bài hát 2' },
+  { src: 'assets/music/canon.m4a', title: 'Canon' },
+  { src: 'assets/music/mono.m4a', title: 'Mono' },
 ];
 
 // Used when a recipient has no personal wish.
