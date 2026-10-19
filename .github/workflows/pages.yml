@@ -1,19 +1,40 @@
 name: Publish Liber website
 
+# Every push and pull request is linted and tested; only main is published,
+# and only after the checks pass.
 on:
   push:
-    branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: liber-pages
+  group: liber-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  check:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Check formatting
+        run: npm run format:check
+      - name: Unit tests
+        run: npm test
+
   deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-22.04
     timeout-minutes: 15
     permissions:
@@ -29,8 +50,7 @@ jobs:
       - name: Prepare static website
         run: |
           mkdir _site
-          cp index.html .nojekyll _site/
-          cp -r assets _site/assets
+          cp -r index.html .nojekyll css js assets _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
