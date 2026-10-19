@@ -27,6 +27,22 @@ Khảo sát cuối thiệp có hai câu hỏi và thanh điểm 0–100. Khi có
 
 Các tính năng không gọi trực tiếp lẫn nhau; khi cần phối hợp (ví dụ mở video thì tạm dừng nhạc), chúng gửi sự kiện qua `js/core/bus.js`.
 
+## Đổi nhạc nền
+
+1. Chép file nhạc vào `assets/music/`. Đặt tên chữ thường, không dấu, không khoảng trắng, ví dụ `bai-1.mp3` (GitHub Pages phân biệt chữ hoa và chữ thường).
+2. Khai báo danh sách trong `js/config.js`, theo thứ tự muốn phát:
+
+   ```js
+   export const MUSIC_PLAYLIST = [
+     { src: 'assets/music/bai-1.mp3', title: 'Tên bài hát 1' },
+     { src: 'assets/music/bai-2.mp3', title: 'Tên bài hát 2' },
+   ];
+   ```
+
+3. Chạy `npm test`: kiểm thử sẽ báo nếu thiếu file, sai tên hoặc thiếu tiêu đề.
+
+Các bài phát lần lượt; hết bài cuối thì quay lại bài đầu. File nào không tải được sẽ bị bỏ qua; nếu không bài nào tải được (hoặc danh sách trống), trang dùng giai điệu tổng hợp có sẵn. Nên dùng MP3 khoảng 128 kbps để tải nhanh trên điện thoại.
+
 Tên được dùng để cá nhân hóa thiệp, không phải tài khoản có mật khẩu. Dữ liệu phản hồi được lưu trên Google Sheets, không nằm trong repository này.
 
 ## Phát triển

@@ -1,7 +1,12 @@
-// Background music: an original synthesized melody (no sampled recording), or a
-// file the visitor picks, kept as a local blob URL. Starts only after a user gesture.
+// Background music. The default is the playlist in config.js, played in order
+// and repeated; without one it is an original synthesized melody (no sampled
+// recording). Visitors can also pick their own file, kept as a local blob URL.
+// Music starts only after a user gesture.
 import { $ } from '../core/dom.js';
 import { on } from '../core/bus.js';
+import { MUSIC_PLAYLIST } from '../config.js';
+
+const SYNTH_TITLE = 'Giai điệu dành cho Liber';
 
 let audio,
   audioCtx = null,
@@ -10,10 +15,13 @@ let audio,
   nextNote = 0,
   noteIndex = 0,
   playing = false,
+  wanted = false,
   source = 'synth',
   fileURL = null,
   operation = 0,
-  resumeMusic = false;
+  resumeMusic = false,
+  trackIndex = 0,
+  failedInARow = 0;
 const melody = [
   72, 76, 79, 83, 79, 76, 74, 79, 81, 84, 81, 79, 71, 74, 78, 81, 78, 74, 69, 72, 76, 79, 76, 72, 67, 71, 74, 79, 74,
   71, 69, 74,
@@ -61,9 +69,43 @@ function updateAudio(message) {
   $('audioStatus').textContent = message;
 }
 
+function loadTrack(index) {
+  trackIndex = index % MUSIC_PLAYLIST.length;
+  const track = MUSIC_PLAYLIST[trackIndex];
+  audio.loop = false;
+  audio.src = track.src;
+  $('trackName').textContent = track.title;
+}
+
+function useSynth() {
+  source = 'synth';
+  audio.removeAttribute('src');
+  audio.load();
+  $('trackName').textContent = SYNTH_TITLE;
+}
+
+function useDefaultMusic() {
+  failedInARow = 0;
+  if (MUSIC_PLAYLIST.length) {
+    source = 'playlist';
+    loadTrack(0);
+  } else useSynth();
+}
+
+// A playlist file that cannot be loaded is skipped. If none of them load, the
+// synthesized melody takes over so the page is never silent by accident.
+function skipBrokenTrack() {
+  failedInARow++;
+  console.warn('[liber] music file failed to load:', MUSIC_PLAYLIST[trackIndex].src);
+  if (failedInARow >= MUSIC_PLAYLIST.length) useSynth();
+  else loadTrack(trackIndex + 1);
+  if (wanted) play();
+}
+
 function stop() {
   operation++;
   playing = false;
+  wanted = false;
   clearInterval(timer);
   timer = null;
   audio.pause();
@@ -72,9 +114,10 @@ function stop() {
 
 async function play() {
   const token = ++operation;
+  wanted = true;
   $('play').disabled = true;
   try {
-    if (source === 'file') {
+    if (source === 'file' || source === 'playlist') {
       await audio.play();
     } else {
       if (!audioCtx) {
@@ -89,7 +132,7 @@ async function play() {
       await audioCtx.resume();
     }
     if (token !== operation) {
-      if (source === 'file') audio.pause();
+      if (source !== 'synth') audio.pause();
       return;
     }
     playing = true;
@@ -100,6 +143,8 @@ async function play() {
     }
     updateAudio('Đang phát');
   } catch (e) {
+    // A playlist file that fails to load also fires "error", which skips it.
+    if (source === 'playlist' && e.name !== 'NotAllowedError') return;
     if (token === operation) {
       stop();
       updateAudio(
@@ -124,6 +169,7 @@ function chooseMusicFile(e) {
   audio.load();
   if (fileURL) URL.revokeObjectURL(fileURL);
   fileURL = URL.createObjectURL(file);
+  audio.loop = true;
   audio.src = fileURL;
   source = 'file';
   $('trackName').textContent = file.name;
@@ -133,22 +179,19 @@ function chooseMusicFile(e) {
 
 function resetMusic() {
   stop();
-  source = 'synth';
-  audio.removeAttribute('src');
-  audio.load();
+  useDefaultMusic();
   if (fileURL) URL.revokeObjectURL(fileURL);
   fileURL = null;
   $('musicFile').value = '';
-  $('trackName').textContent = 'Giai điệu dành cho Liber';
   $('resetMusic').hidden = true;
-  updateAudio('Đã chọn giai điệu mặc định · Nhấn phát để nghe.');
+  updateAudio('Đã chọn nhạc mặc định · Nhấn phát để nghe.');
 }
 
 export function init() {
   audio = new Audio();
-  audio.loop = true;
   audio.preload = 'metadata';
   audio.volume = 0.4;
+  useDefaultMusic();
   $('play').onclick = () => {
     if (playing) {
       stop();
@@ -163,10 +206,22 @@ export function init() {
   $('musicFile').onchange = chooseMusicFile;
   $('resetMusic').onclick = resetMusic;
   audio.addEventListener('error', () => {
-    if (source === 'file' && audio.getAttribute('src')) {
+    if (!audio.getAttribute('src')) return;
+    if (source === 'playlist') skipBrokenTrack();
+    else if (source === 'file') {
       stop();
       updateAudio('Không đọc được nhạc. Hãy chọn file MP3 hoặc WAV khác.');
     }
+  });
+  audio.addEventListener('playing', () => {
+    if (source === 'playlist') failedInARow = 0;
+  });
+  // Playlist tracks do not loop individually: each one hands over to the next,
+  // and the last hands back to the first.
+  audio.addEventListener('ended', () => {
+    if (source !== 'playlist') return;
+    loadTrack(trackIndex + 1);
+    play();
   });
   window.addEventListener('pagehide', stop);
   on('audio:autoplay', () => {
