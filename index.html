@@ -31,6 +31,31 @@
 
 
 <link rel="stylesheet" href="css/styles.css">
+<!-- Fetch every module in parallel with the page; tests/unit/preload.test.js keeps this list complete. -->
+<link rel="modulepreload" href="js/config.js">
+<link rel="modulepreload" href="js/core/bus.js">
+<link rel="modulepreload" href="js/core/dialogs.js">
+<link rel="modulepreload" href="js/core/dom.js">
+<link rel="modulepreload" href="js/core/errors.js">
+<link rel="modulepreload" href="js/core/motion.js">
+<link rel="modulepreload" href="js/core/router.js">
+<link rel="modulepreload" href="js/core/state.js">
+<link rel="modulepreload" href="js/data/card-themes.js">
+<link rel="modulepreload" href="js/data/recipients.js">
+<link rel="modulepreload" href="js/drawing/cat.js">
+<link rel="modulepreload" href="js/drawing/doodles.js">
+<link rel="modulepreload" href="js/features/audio.js">
+<link rel="modulepreload" href="js/features/celebration/celebration.js">
+<link rel="modulepreload" href="js/features/celebration/ending.js">
+<link rel="modulepreload" href="js/features/entry/entry.js">
+<link rel="modulepreload" href="js/features/entry/recipient-search.js">
+<link rel="modulepreload" href="js/features/feedback/feedback.js">
+<link rel="modulepreload" href="js/features/feedback/feedback-api.js">
+<link rel="modulepreload" href="js/features/heart.js">
+<link rel="modulepreload" href="js/features/keepsake.js">
+<link rel="modulepreload" href="js/features/letter.js">
+<link rel="modulepreload" href="js/session/card-theme.js">
+<link rel="modulepreload" href="js/session/recipient.js">
 </head>
 
 
@@ -226,8 +251,7 @@
 
 
 
-<script src="js/data/recipients.js"></script>
-<script src="js/app.js"></script>
+<script type="module" src="js/main.js"></script>
 
 
 
