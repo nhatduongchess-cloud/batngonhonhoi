@@ -1,0 +1,1671 @@
+<!doctype html>
+
+
+
+<html lang="vi">
+
+
+
+<head>
+
+
+
+<meta charset="UTF-8">
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+<meta name="theme-color" content="#1b1024">
+
+
+
+<meta name="description" content="Một trái tim ngàn ánh sáng, gửi những bạn nữ CLB Liber nhân ngày Phụ nữ Việt Nam 20/10.">
+
+
+
+<title>20/10 · Gửi những bông hoa của Liber</title>
+
+
+
+<style>
+
+
+
+:root{color-scheme:dark;--bg:#1b1024;--panel:#291a32;--ink:#fff2ec;--muted:#c8b3ca;--pink:#f7a6c4;--line:#ffffff20;--gold:#e7c6a1;--body:"Segoe UI",Arial,"Helvetica Neue",sans-serif;--display:var(--body)}
+
+
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);background-image:radial-gradient(ellipse at 76% 42%,#64304b45,transparent 48%);min-width:280px}button,input{font:inherit}button,a,label{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,.upload:focus-within{outline:2px solid var(--gold);outline-offset:5px}button{color:inherit}a{color:inherit}button:disabled{opacity:.6;cursor:wait}.page{max-width:1440px;margin:auto;padding:34px 6vw 22px}.masthead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:23px}.brand{display:flex;align-items:center;gap:12px}.brand-icon{width:32px;height:32px;display:grid;place-items:center;border:1px solid #f7a6c455;border-radius:50%;color:var(--pink);font-size:23px}.brand-name{font-size:21px;letter-spacing:5px;font-weight:600}.brand-note{font-size:10px;letter-spacing:2.2px;color:var(--muted);margin-top:4px}.occasion{text-align:right;font-size:10px;letter-spacing:1.5px;color:var(--muted)}.occasion strong{display:block;font-family:var(--display);font-size:29px;font-weight:400;letter-spacing:4px;color:var(--ink);margin-bottom:3px}
+
+
+
+.hero{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;min-height:580px;position:relative;padding:40px 0 30px;gap:15px}.intro{position:relative;z-index:2}.eyebrow{font-size:11px;letter-spacing:2.7px;text-transform:uppercase;color:var(--pink);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:25px;height:1px;background:var(--pink)}h1{font-family:var(--display);font-size:clamp(48px,5.8vw,84px);line-height:1.13;font-weight:400;letter-spacing:-3px;margin:24px 0}h1 em{font-weight:400;color:var(--pink)}.lead{font-size:14px;line-height:1.9;color:var(--muted);max-width:340px;margin:0 0 27px}.lead strong{color:var(--ink);font-weight:500}.open-letter{border:0;border-radius:30px;background:var(--pink);color:#31162c;padding:15px 23px;font-weight:600;font-size:13px;display:inline-flex;gap:27px;align-items:center;transition:transform .2s,background .2s}.open-letter:hover{transform:translateY(-2px);background:#ffc3d9}.dedication{font-family:var(--display);font-style:italic;font-size:14px;color:var(--muted);margin-top:19px}
+
+
+
+.art{position:relative;align-self:stretch;min-height:500px;display:flex;align-items:center;justify-content:center}.art:before{content:"";position:absolute;inset:11% 4%;border-radius:50%;background:radial-gradient(ellipse,#c7567e13,transparent 68%);pointer-events:none}.canvas-wrap{width:100%;height:100%;position:absolute;inset:0}canvas{width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab}canvas:active{cursor:grabbing}.art-top{position:absolute;top:4px;width:100%;display:flex;justify-content:center;gap:6px;z-index:1}.mode{border:1px solid transparent;background:transparent;border-radius:20px;font-size:11px;color:var(--muted);padding:8px 12px}.mode[aria-pressed=true]{border-color:#f7a6c445;color:var(--pink);background:#f7a6c408}.art-caption{position:absolute;bottom:5px;text-align:center;font-size:10px;letter-spacing:1.8px;color:var(--muted);pointer-events:none;line-height:1.9}.art-caption span{display:block;font-size:9px;letter-spacing:.5px;color:#b59bb5}.pause{position:absolute;right:0;bottom:5px;z-index:1;border:1px solid var(--line);background:#291a3280;border-radius:50%;width:34px;height:34px;font-size:11px;display:grid;place-items:center}.audio-panel{border:1px solid var(--line);border-radius:16px;padding:20px 24px;background:linear-gradient(115deg,#ffffff05,#f7a6c408);display:flex;align-items:center;gap:17px}.play{border:1px solid #f7a6c45c;border-radius:50%;width:45px;height:45px;flex-shrink:0;background:#f7a6c40a;color:var(--pink);font-size:17px;display:grid;place-items:center}.track{flex:1;min-width:0}.track-title{font-size:12px;margin:0 0 6px;color:var(--ink);overflow-wrap:anywhere}.track-title small{font-size:9px;letter-spacing:1.8px;color:var(--pink);margin-right:12px}.status{font-size:11px;color:var(--muted);margin:0;line-height:1.6}.audio-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.volume{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:10px}.volume input{accent-color:var(--pink);width:70px;height:18px}.upload{border:1px solid #ffffff30;border-radius:22px;padding:10px 14px;cursor:pointer;font-size:11px;white-space:nowrap;display:inline-block;position:relative}.upload:hover{background:#ffffff08}.upload input{position:absolute;width:1px;height:1px;opacity:0}.reset{background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;color:var(--pink);font-size:11px}.audio-note{font-size:10px;color:var(--muted);margin:10px 0 0;line-height:1.7}.bottom{display:flex;justify-content:space-between;align-items:center;margin-top:30px;font-size:10px;letter-spacing:1px;color:var(--muted);gap:16px}.bottom .sign{font-family:var(--display);font-style:italic;font-size:15px;letter-spacing:.3px;color:var(--pink)}
+
+
+
+dialog{border:1px solid #f7a6c445;border-radius:22px;background:#291a32;color:var(--ink);width:min(560px,calc(100% - 32px));max-height:88dvh;padding:45px 44px;box-shadow:0 30px 100px #0008}dialog::backdrop{background:#100b19bd;backdrop-filter:blur(9px)}.close{position:absolute;top:12px;right:14px;border:0;background:none;font-size:24px;color:var(--muted);width:34px;height:34px}.letter-date{color:var(--pink);font-size:10px;letter-spacing:3px}.letter h2{font-family:var(--display);font-weight:400;font-size:36px;line-height:1.25;margin:20px 0}.letter p{font-size:14px;line-height:1.95;color:#ddcddd}.letter .signature{font-family:var(--display);font-style:italic;color:var(--pink);font-size:20px;margin:22px 0 0}.letter .small{font-size:11px;color:var(--muted);margin-top:20px}.spark{position:fixed;pointer-events:none;z-index:10;font-size:16px;color:var(--pink);animation:float 1.8s ease-out forwards}@keyframes float{to{transform:translate(var(--dx),var(--dy)) rotate(80deg);opacity:0}}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}[hidden]{display:none!important}
+
+
+
+@media(min-width:1500px){.page{padding-left:80px;padding-right:80px}.hero{min-height:650px}}
+
+
+
+@media(max-width:760px){.page{padding:24px 24px 22px}.masthead{padding-bottom:20px}.brand-name{font-size:18px}.brand-note{font-size:8px}.occasion{font-size:8px}.occasion strong{font-size:25px}.hero{grid-template-columns:1fr;gap:0;padding:32px 0 22px;min-height:0}.intro{text-align:center}.eyebrow{justify-content:center;font-size:9px;letter-spacing:2px}.eyebrow:after{content:"";width:25px;height:1px;background:var(--pink)}h1{font-size:clamp(44px,10.7vw,72px);letter-spacing:-1.8px;line-height:1.13;margin:21px 0 18px}.lead{max-width:350px;margin:0 auto 20px;font-size:13px}.dedication{font-size:12px;margin:14px 0 0}.art{height:390px;min-height:0;margin-top:25px}.art-top{top:0}.art-caption{bottom:0}.audio-panel{padding:17px;flex-wrap:wrap;gap:13px}.audio-controls{width:100%;padding-top:12px;border-top:1px solid var(--line);justify-content:space-between;gap:9px}.track-title small{display:block;margin:0 0 5px}.track-title{font-size:12px}.status{font-size:10px}.audio-note{font-size:9px}.bottom{margin-top:23px;font-size:9px;align-items:flex-end}.bottom .sign{font-size:13px}.letter{padding:38px 26px}.letter h2{font-size:30px}.letter p{font-size:13px}}
+
+
+
+@media(max-width:360px){.page{padding:20px 16px}.brand-note{letter-spacing:1px}.occasion{letter-spacing:.6px}.art{height:340px}.eyebrow{letter-spacing:1.3px}.volume{gap:4px}.volume input{width:55px}.upload{padding:9px 11px}.bottom{letter-spacing:.3px}}
+
+
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+
+
+
+
+
+
+/* Welcome, guided entry and a slider-driven mathematical heart. */
+
+
+
+.welcome{max-width:1000px;margin:65px auto 55px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;min-height:520px}.welcome h1{font-size:clamp(42px,4.5vw,64px);letter-spacing:-2px;line-height:1.17;margin:18px 0}.welcome-copy{font-size:14px;color:var(--muted);line-height:1.9;max-width:370px}.gift-art{text-align:center;position:relative}.gift-art svg{width:min(100%,390px);filter:drop-shadow(0 25px 45px #e56da220)}.gift-art .gift-note{font-family:var(--display);font-style:italic;color:var(--pink);font-size:18px;margin-top:8px}.login-form{margin-top:26px;max-width:390px}.login-form label{display:block;font-size:12px;margin-bottom:10px;color:var(--ink)}.login-form input{width:100%;border:1px solid #f7a6c455;border-radius:13px;padding:15px 16px;background:#ffffff05;color:var(--ink);font-size:16px}.login-form input::placeholder{color:#ab91ae}.login-form .open-letter{width:100%;justify-content:space-between;margin-top:14px}.privacy{font-size:11px;line-height:1.7;color:var(--muted)}.field-error{min-height:17px;color:#ffc1d2;font-size:12px;margin:8px 0 0}.guide{max-width:920px;margin:64px auto 45px;text-align:center;min-height:530px}.guide .eyebrow{justify-content:center}.guide h1{font-size:clamp(35px,4.2vw,56px);letter-spacing:-1.5px;overflow-wrap:anywhere;line-height:1.25;margin-bottom:13px}.guide-sub{color:var(--muted);font-size:14px;line-height:1.8}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0}.step{border:1px solid #f7a6c42b;background:#ffffff03;border-radius:20px;padding:26px 22px;text-align:left}.step-icon{color:var(--pink);font-size:28px;height:45px;display:block}.step h2{font-size:16px;font-weight:500;margin:12px 0}.step p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}.step-number{font-size:10px;color:var(--pink);letter-spacing:1.3px}.guide-actions{display:flex;justify-content:center;gap:20px;align-items:center;flex-wrap:wrap}.text-button{border:0;background:none;color:var(--muted);font-size:12px;padding:10px 0;text-decoration:underline;text-underline-offset:4px}.route-bar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:20px}.hello{font-size:12px;color:var(--pink);overflow-wrap:anywhere;min-width:0}.route-links{display:flex;gap:20px;flex-shrink:0}.hero{min-height:600px;padding-top:25px}.hero h1{font-size:clamp(44px,4.9vw,70px)}.art{min-height:570px}.art .canvas-wrap{inset:40px 0 130px;height:auto}.art .pause{top:5px;bottom:auto}.art .art-caption{bottom:119px}.drawing-controls{position:absolute;bottom:0;left:6%;right:6%;border-top:1px solid var(--line);padding-top:17px}.drawing-label{display:flex;justify-content:space-between;gap:12px;font-size:12px;align-items:center}.drawing-label label{color:var(--pink)}.drawing-label output{font-variant-numeric:tabular-nums;color:var(--muted);font-size:11px}.draw-range{--fill:0%;display:block;appearance:none;-webkit-appearance:none;width:100%;height:36px;margin:8px 0 0;background:transparent;cursor:ew-resize;touch-action:pan-y}.draw-range::-webkit-slider-runnable-track{height:5px;border-radius:10px;background:linear-gradient(to right,var(--pink) var(--fill),#60445c var(--fill))}.draw-range::-moz-range-track{height:5px;border-radius:10px;background:#60445c}.draw-range::-moz-range-progress{height:5px;background:var(--pink);border-radius:10px}.draw-range::-webkit-slider-thumb{-webkit-appearance:none;width:25px;height:25px;margin-top:-10px;border-radius:50%;background:#ffbed6;border:5px solid #8e536e;box-shadow:0 0 0 5px #f7a6c416}.draw-range::-moz-range-thumb{width:17px;height:17px;border-radius:50%;background:#ffbed6;border:4px solid #8e536e}.drawing-foot{display:flex;justify-content:space-between;align-items:center;gap:12px}.drawing-foot p{font-size:10px;line-height:1.7;margin:0;color:var(--muted)}.drawing-foot button{font-size:10px;white-space:nowrap}.formula{font-family:var(--display);font-style:italic;letter-spacing:.4px!important;font-size:11px!important}.completion{color:var(--pink)!important}.intro .lead{max-width:355px}.intro .eyebrow{letter-spacing:1.8px}.letter h2 span{overflow-wrap:anywhere}.route-title:focus{outline:none}
+
+
+
+@media(max-width:760px){.welcome{grid-template-columns:1fr;gap:12px;margin:25px auto 30px;min-height:0;max-width:440px}.gift-art{order:2}.gift-art svg{width:200px}.gift-art .gift-note{font-size:14px;margin-top:0}.welcome h1{font-size:44px;letter-spacing:-1.5px;text-align:center}.welcome-copy{text-align:center;margin:0 auto;font-size:13px}.login-form{max-width:none;margin-top:22px}.welcome .eyebrow{font-size:9px;letter-spacing:1.7px}.guide{margin:34px auto 24px;min-height:0}.guide h1{font-size:36px}.guide-sub{font-size:13px}.steps{grid-template-columns:1fr;gap:12px;margin:25px 0}.step{padding:18px 20px;position:relative;padding-left:72px}.step-icon{position:absolute;left:22px;top:29px;font-size:25px}.step h2{margin:7px 0;font-size:15px}.step p{font-size:12px}.guide-actions{gap:10px}.route-bar{align-items:flex-start;margin-top:17px}.route-links{gap:14px}.route-links .text-button{padding:0;font-size:10px}.hello{font-size:11px;max-width:55%}.hero{padding-top:24px}.hero h1{font-size:43px;line-height:1.15;margin:16px 0}.intro .lead{font-size:12px;margin-bottom:16px}.intro .dedication{display:none}.art{height:490px;min-height:490px;margin-top:24px}.art .canvas-wrap{inset:40px -8px 130px}.art .art-caption{bottom:120px}.drawing-controls{left:0;right:0}.art-top{justify-content:flex-start;padding-left:6px}.art-top .mode{font-size:10px}.drawing-label{font-size:11px}.hero .eyebrow{font-size:9px;letter-spacing:1.3px}.page:has(.welcome:not([hidden])) .bottom{margin-top:20px}.bottom{flex-wrap:wrap}}
+
+
+
+@media(max-width:360px){.welcome h1{font-size:38px}.hero h1{font-size:38px}.guide h1{font-size:31px}.hero .eyebrow{letter-spacing:.7px}.art{height:460px;min-height:460px}.drawing-foot p{max-width:200px}}
+
+
+
+
+
+
+
+
+
+
+
+/* Consistent Vietnamese typography and fewer visual controls. */
+
+
+
+body{font-synthesis:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+
+
+h1,.welcome h1,.guide h1,.hero h1{font-weight:600;font-style:normal;letter-spacing:-.7px;line-height:1.3}
+
+
+
+h1 em,.letter .signature,.bottom .sign{font-style:normal;font-weight:600}
+
+
+
+.welcome h1{font-size:clamp(36px,3.7vw,52px)}
+
+
+
+.hero h1{font-size:clamp(38px,4.2vw,60px)}
+
+
+
+.guide h1{font-size:clamp(32px,3.5vw,46px)}
+
+
+
+.letter h2{font-size:30px;font-weight:600;line-height:1.4;letter-spacing:-.3px}
+
+
+
+.letter .signature{font-size:18px;line-height:1.6}
+
+
+
+.brand-note,.eyebrow,.occasion,.step-number,.letter-date{letter-spacing:1px;line-height:1.8}
+
+
+
+.brand-note{font-size:10px}.occasion{font-size:10px}.eyebrow{font-size:11px}
+
+
+
+.hero{min-height:540px}.art{min-height:510px}.art .canvas-wrap{inset:0 0 105px}
+
+
+
+.drawing-controls{padding-top:15px}.drawing-foot{min-height:28px}.drawing-foot p{font-size:12px;line-height:1.6}
+
+
+
+.status,.audio-note,.privacy{font-size:12px;line-height:1.7}.track-title{font-size:14px}.hello{font-size:14px}
+
+
+
+.field-error:empty{display:none}.field-error{line-height:1.6}
+
+
+
+.bottom{justify-content:center;letter-spacing:.8px;font-size:11px}.audio-note{margin-top:10px}
+
+
+
+@media(max-width:760px){.welcome h1{font-size:36px}.hero h1{font-size:40px}.guide h1{font-size:32px}.letter h2{font-size:25px}.letter p{font-size:14px}.brand-note{font-size:8px}.occasion{font-size:9px}.art{height:420px;min-height:420px;margin-top:12px}.art .canvas-wrap{inset:0 -8px 100px}.hero{min-height:0}.hero .lead{font-size:14px}.hero .open-letter{margin-top:2px}.drawing-foot p{font-size:11px;max-width:none}.audio-note{font-size:11px}.hello{font-size:12px}.bottom{margin-top:22px}.welcome-copy{font-size:14px}.step p{font-size:13px}.gift-art svg{width:170px}}
+
+
+
+@media(max-width:360px){.welcome h1{font-size:31px}.hero h1{font-size:35px}.guide h1{font-size:29px}.brand-note{font-size:7px;letter-spacing:.5px}.occasion{font-size:8px}.art{height:390px;min-height:390px}.letter{padding:38px 22px}.letter h2{font-size:23px}}
+
+
+
+
+
+
+
+
+
+
+
+.celebration{width:min(900px,calc(100% - 28px));padding:32px;border-radius:24px;overflow:auto;max-height:92dvh}
+
+
+
+.celebration .close{z-index:4}.celebration-intro{min-height:380px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;padding:26px 10px;overflow:hidden}
+
+
+
+.celebration-intro>svg{width:90px;height:90px;filter:drop-shadow(0 0 22px #f7a6c455);margin-bottom:18px}.celebration h2{font-size:32px;font-weight:600;line-height:1.35;letter-spacing:-.5px;margin:10px 0 14px}.celebration p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}.celebration-intro .to-name{color:var(--pink);font-size:18px;overflow-wrap:anywhere;max-width:100%}
+
+
+
+.confetti{position:absolute;inset:0;overflow:hidden;pointer-events:none}.confetti i{position:absolute;top:-24px;width:8px;height:13px;background:var(--pink);border-radius:2px;animation:confetti-fall 2.6s ease-in forwards;animation-delay:var(--delay);left:var(--left);opacity:0}
+
+
+
+@keyframes confetti-fall{0%{opacity:1;transform:translateY(-20px) rotate(0)}100%{opacity:0;transform:translate(var(--drift),500px) rotate(var(--spin))}}
+
+
+
+.video-stage{text-align:center;padding-top:12px}.video-stage h2{font-size:25px;margin:0 20px 8px}.video-stage video{display:block;width:100%;max-height:60dvh;min-height:160px;object-fit:contain;background:#120b19;border-radius:14px;margin-top:20px}.video-empty{border:1px dashed #f7a6c455;border-radius:16px;padding:35px 20px;margin-top:22px}.video-empty .open-letter{margin-top:20px}.video-status{min-height:24px;margin-top:12px!important}.video-actions{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:12px;flex-wrap:wrap}.video-actions .open-letter{padding:11px 20px}.route-links{flex-wrap:wrap;justify-content:flex-end}.hello{flex:1}
+
+
+
+@media(max-width:760px){.celebration{padding:35px 18px 23px}.celebration h2{font-size:27px}.celebration-intro{min-height:350px}.video-stage h2{font-size:22px}.video-stage video{max-height:55dvh}.video-empty{padding:25px 15px}.route-links{gap:12px}.route-links .text-button{font-size:11px}.hello{max-width:50%}}
+
+
+
+@media(prefers-reduced-motion:reduce){.confetti{display:none}}
+
+
+
+
+
+
+
+
+
+
+
+.guide h1{font-size:clamp(30px,3.2vw,44px)}.guide h1 em{color:var(--pink)}
+
+
+
+.video-lead,.ending-stage{text-align:center;padding:30px 14px 14px}.video-lead{min-height:390px;display:flex;flex-direction:column;align-items:center;justify-content:center}.video-lead .lead-heart{font-size:52px;color:var(--pink);margin-bottom:15px}.video-lead h2{max-width:620px;font-size:29px;line-height:1.5}.video-lead p{max-width:520px}.video-lead .open-letter{margin-top:25px}
+
+
+
+.celebration-intro h2{max-width:650px;overflow-wrap:anywhere}.celebration-intro .for-name{display:block;color:var(--pink);font-size:.8em;margin-top:10px}.ending-stage{padding-top:8px}.ending-stage canvas{width:min(340px,100%);height:auto;aspect-ratio:360/280;margin:0 auto;cursor:default;touch-action:auto}.ending-stage h2{font-size:29px;overflow-wrap:anywhere;margin:5px auto 16px;max-width:650px}.ending-stage h2 span{color:var(--pink)}.ending-wish{max-width:540px;margin:0 auto!important;font-size:16px!important;line-height:1.9!important}.ending-sign{margin:18px auto 25px!important;color:var(--pink)!important;font-size:13px!important}.ending-actions{display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap}.card-status{font-size:12px!important;min-height:20px;margin-top:12px!important}.card-fallback{display:block;color:var(--pink);font-size:12px;margin-top:8px}.ending-stage .open-letter{gap:12px}.celebration:has(.ending-stage:not([hidden])){max-width:740px}
+
+
+
+@media(max-width:760px){.video-lead{padding:28px 4px 8px;min-height:360px}.video-lead h2{font-size:24px}.ending-stage{padding:0}.ending-stage h2{font-size:24px}.ending-stage canvas{width:240px}.ending-wish{font-size:14px!important}.ending-sign{font-size:12px!important;margin-bottom:18px!important}.ending-actions{gap:12px}.ending-actions .open-letter{font-size:12px;padding:13px 17px}.celebration-intro h2{font-size:25px}}
+
+
+
+
+
+
+
+
+
+
+/* A folded greeting card is the entry point; the name is a playful key. */
+
+
+.welcome.card-welcome{display:flex;flex-direction:column;align-items:center;gap:0;max-width:560px;min-height:0;margin:38px auto 14px;perspective:1600px}
+
+
+.locked-card{position:relative;width:100%;isolation:isolate;perspective:1600px;border-radius:20px;box-shadow:0 26px 80px #0004}
+
+
+.card-cover{position:relative;z-index:2;padding:28px 42px 24px;background:linear-gradient(120deg,#fff5f3,#f7e2e9 65%,#f0d8e3);color:#62364e;border:1px solid #ffe9f0;border-radius:20px;transform-origin:left center;transition:transform .85s cubic-bezier(.3,.65,.25,1),opacity .65s ease;backface-visibility:hidden}
+
+
+.card-cover:before{content:"";position:absolute;inset:12px;border:1px solid #b7708b45;border-radius:12px;pointer-events:none}.card-cover:after{content:"";position:absolute;top:14px;bottom:14px;left:20px;width:1px;background:#a1657f20;pointer-events:none}
+
+
+.card-topline{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;letter-spacing:1.4px;line-height:1.6;color:#9a6681}.card-topline>span:nth-child(2){font-size:19px;color:#b77e96}.card-florals{display:block;width:170px;height:90px;margin:14px auto 12px}
+
+
+.card-welcome h1{font-family:var(--body);font-size:34px;line-height:1.35;letter-spacing:-.6px;text-align:center;font-weight:600;margin:0 0 14px;color:#60394f}.card-welcome h1 em{color:#b55d86;font-style:normal}.card-description{font-size:14px;line-height:1.8;text-align:center;margin:0;color:#8d657a}
+
+
+.card-cover .login-form{max-width:none;margin-top:22px}.card-cover .login-form label{font-size:12px;color:#73425c;margin-bottom:9px}.card-cover .login-form input{background:#fff9fa;border:1px solid #c796ac;color:#5d3049;border-radius:12px;padding:13px 14px;font-size:16px;line-height:1.4}.card-cover .login-form input::placeholder{font-size:14px;color:#aa8194}.card-cover .login-form input:focus-visible{outline:2px solid #a35e82;outline-offset:3px}.card-cover .open-letter{background:#a95c80;color:#fff6f9;justify-content:center;gap:12px;padding:14px 18px;margin-top:15px;font-size:13px;line-height:1.4}.card-cover .open-letter>span:last-child{margin-left:auto}.card-cover .open-letter>svg{margin-right:auto;flex-shrink:0}.card-cover .open-letter:hover{background:#91486c}.card-cover .privacy{font-size:11px;text-align:center;color:#916a7d;margin:12px 0 0;line-height:1.6}.card-cover .field-error{font-size:12px;color:#a63260;line-height:1.7}.card-cover button:focus-visible{outline-color:#79304f}
+
+
+.card-signature{text-align:center;color:#9d6a82;font-size:11px;border-top:1px solid #c69aaf55;margin-top:20px;padding-top:15px;line-height:1.6}.card-inside{position:absolute;z-index:1;inset:0;background:linear-gradient(140deg,#fff6f4,#f2dde7);border:1px solid #e9c1d3;border-radius:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:36px;color:#73425d;text-align:center;visibility:hidden}.card-inside p{font-size:14px;line-height:1.8;margin:10px 0}.card-inside h2{font-size:30px;line-height:1.4;overflow-wrap:anywhere;max-width:100%;margin:8px 0;color:#a7547c}.inside-heart{font-size:62px;color:#c26f98;line-height:1.5}.locked-card.is-unlocking .card-cover{transform:rotateY(-100deg);opacity:0;pointer-events:none}.locked-card.is-unlocking .card-inside{visibility:visible}.unlock-status{min-height:21px;line-height:1.7;font-size:12px;color:var(--pink);text-align:center;margin:15px 0 0}
+
+
+@media(max-width:760px){.welcome.card-welcome{margin:27px auto 4px;max-width:460px}.card-cover{padding:24px 26px 20px}.card-welcome h1{font-size:29px}.card-topline{font-size:8px;letter-spacing:1px}.card-florals{width:145px;height:76px;margin:10px auto}.card-description{font-size:13px}.card-cover .login-form{margin-top:18px}.card-cover .login-form input::placeholder{font-size:12px}.card-cover .open-letter{font-size:12px}.card-signature{font-size:10px;margin-top:17px;padding-top:12px}.card-inside{padding:25px}.card-inside h2{font-size:25px}}
+
+
+@media(max-width:360px){.card-cover{padding:22px 23px 18px}.card-welcome h1{font-size:25px}.card-topline{font-size:7px;letter-spacing:.6px}.card-cover .login-form label{font-size:11px}.card-cover .open-letter{gap:7px;padding:13px 12px;font-size:11px}.card-description{font-size:12px}.card-cover .privacy{font-size:10px}.card-signature{font-size:9px}}
+
+
+@media(prefers-reduced-motion:reduce){.locked-card.is-unlocking .card-cover{transform:none;opacity:0}}
+
+
+
+
+
+
+
+/* Short transitions keep the experience continuous without delaying input. */
+
+.scene-host{display:flow-root;min-width:0}.scene-host.is-changing{overflow:hidden;overflow:clip;will-change:height}
+
+#welcome,#guide,#mainPage,#celebrationIntro,#videoLead,#videoStage,#endingStage{transform-origin:center top}
+
+dialog[open]{animation:dialog-arrive .28s cubic-bezier(.2,.7,.25,1) both}dialog[open]::backdrop{animation:backdrop-arrive .24s ease both}dialog.is-closing::backdrop{animation:backdrop-leave .16s ease both}
+
+@keyframes dialog-arrive{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+@keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}@keyframes backdrop-leave{from{opacity:1}to{opacity:0}}
+
+.celebration,.celebration:has(.ending-stage:not([hidden])){width:min(820px,calc(100% - 28px));max-width:820px}
+
+@media(prefers-reduced-motion:reduce){dialog[open],dialog[open]::backdrop,dialog.is-closing::backdrop{animation:none!important}}
+
+
+
+
+.recipient-portrait{width:min(270px,85%);height:300px;object-fit:contain;background:#f8e7ec;border:9px solid #f8e7ec;border-bottom-width:22px;border-radius:8px;box-shadow:0 12px 28px #0003;transform:rotate(-2deg);margin:12px auto 28px;display:block}.ending-stage.has-portrait{padding-top:10px}.ending-stage.has-portrait h2{margin-top:0}.photo-status{font-size:11px!important;color:var(--muted)!important;margin:0 auto 12px!important}.step h2{margin-bottom:0}
+@media(max-width:760px){.recipient-portrait{width:210px;height:245px;border-width:7px;border-bottom-width:18px;margin-bottom:22px}}
+
+
+.recipient-choices{display:grid;gap:8px;margin:12px 0 4px}.recipient-choice{width:100%;text-align:left;border:1px solid #c58da5;border-radius:10px;background:#fff9fb;color:#71364f;padding:12px 14px;font:inherit;font-size:13px;line-height:1.5;cursor:pointer;transition:background .18s,border-color .18s}.recipient-choice:hover{background:#f6dce7;border-color:#a95c80}.recipient-choice:focus-visible{outline:2px solid #79304f;outline-offset:2px}
+
+.ending-art{position:relative;isolation:isolate;width:min(460px,100%);margin:0 auto 6px;padding:24px 0 48px;min-height:340px}.ending-art .recipient-portrait{margin:0 auto;position:relative}.ending-art #bouquet{position:relative;margin:0 auto;display:block}.ending-stage .ending-art .ending-decor{position:absolute;inset:0;width:100%;height:100%;margin:0;aspect-ratio:auto;pointer-events:none;z-index:2}.ending-art .photo-status{position:relative;z-index:3}
+@media(max-width:760px){.ending-art{padding:20px 0 46px;min-height:300px}.ending-stage.has-portrait h2{font-size:23px}}
+
+/* A little scrapbook: offset paper, slanted photo and a loose sticker cluster. */
+.ending-art{width:min(510px,100%);height:405px;min-height:0;padding:0;margin:0 auto 0}.ending-art:before{content:"";position:absolute;left:14%;top:44px;width:245px;height:295px;background:#d8c4df;transform:rotate(5deg);border-radius:3px;box-shadow:0 8px 24px #0002}.ending-art .recipient-portrait{position:absolute;left:14%;top:40px;width:245px;height:290px;transform:rotate(-7deg);border-radius:3px;border-width:9px;border-bottom-width:28px;box-shadow:0 12px 24px #0004}.ending-art #bouquet{position:absolute;left:6%;top:32px;width:300px;transform:rotate(-6deg)}.ending-art .photo-status{position:absolute;left:0;right:0;bottom:0}.ending-stage h2{max-width:510px;text-align:left;transform:rotate(-1.4deg);padding:0 22px;margin:0 auto 22px;font-size:29px}.ending-stage .ending-wish{position:relative;max-width:465px;margin:0 auto 18px!important;padding:19px 24px;background:#f7e5ec;color:#73415a;border-radius:3px 12px 5px 3px;text-align:left;transform:translateX(18px) rotate(1.8deg);box-shadow:4px 6px 0 #b68eaa33;font-size:15px!important;line-height:1.8!important}.ending-wish:before{content:"";position:absolute;width:65px;height:18px;top:-8px;right:24px;transform:rotate(-9deg);background:repeating-linear-gradient(45deg,#bda8d9b3 0 5px,#ded0eecc 5px 10px)}.ending-stage .ending-sign{max-width:495px;text-align:right;margin:26px auto 25px!important;padding-right:8px;font-size:12px!important}.ending-actions{justify-content:flex-start;max-width:470px;margin:0 auto;gap:24px}.ending-stage .card-status,.ending-stage .card-fallback{max-width:470px;margin-left:auto;margin-right:auto;text-align:left}
+@media(max-width:760px){.ending-art{height:337px}.ending-art:before{left:10%;top:35px;width:190px;height:240px}.ending-art .recipient-portrait{left:10%;top:33px;width:190px;height:240px;border-width:7px;border-bottom-width:23px}.ending-art #bouquet{width:220px;left:5%;top:35px}.ending-stage h2,.ending-stage.has-portrait h2{font-size:23px;padding:0 7px;margin-bottom:20px}.ending-stage .ending-wish{width:calc(100% - 18px);font-size:13px!important;padding:17px 19px;transform:translateX(5px) rotate(1.8deg)}.ending-stage .ending-sign{font-size:11px!important;margin-top:22px!important;padding-right:7px}.ending-actions{gap:16px;padding-left:7px}}
+@media(max-width:360px){.ending-art{height:315px}.ending-art .recipient-portrait{width:165px;height:215px;left:8%}.ending-art:before{width:165px;height:215px;left:9%}.ending-stage h2,.ending-stage.has-portrait h2{font-size:21px}}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/7e16dc0c53665907f8b4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/6f4ac953d32c1874437a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/9ecbdba35fa74f10a1a9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/ceb6eec0a584cae83e8f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/1506fc96971e84d1a4ca.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/1a025dfce6e6e03bbe31.ttf) format('truetype');
+}
+
+
+/* Round Vietnamese body type and handwritten accents, embedded for offline use. */
+:root{--body:"Nunito","Segoe UI",Arial,sans-serif;--display:"Dancing Script","Nunito",cursive}
+body{font-size:17px;line-height:1.65}h1,.welcome h1,.guide h1,.hero h1,.card-welcome h1{font-family:var(--display);font-weight:600;letter-spacing:0;line-height:1.28}h1 em{font-family:var(--display);font-weight:600}
+.card-welcome h1{font-size:43px}.card-description{font-size:16px;line-height:1.85}.card-cover .login-form label{font-size:14px}.card-cover .login-form input{font-size:18px}.card-cover .login-form input::placeholder{font-size:14px}.card-cover .open-letter{font-size:15px}.card-cover .privacy{font-size:13px}.card-cover .field-error{font-size:14px}.card-signature{font-size:13px}.card-topline{font-size:11px;letter-spacing:.8px}.card-inside h2{font-family:var(--display);font-size:39px}.card-inside p{font-size:17px}.unlock-status{font-size:14px}.recipient-choice{font-size:15px}
+.guide h1{font-size:clamp(40px,4vw,55px)}.guide-sub{font-size:17px}.step h2{font-size:19px;font-weight:600;line-height:1.5}.step-number{font-size:12px}.step-icon{font-size:30px}.open-letter{font-size:15px}.text-button{font-size:15px}.hero h1{font-size:clamp(49px,4.9vw,72px)}.hero .lead{font-size:17px;line-height:1.9;max-width:390px}.dedication{font-size:22px;line-height:1.7}.hello{font-size:16px}.route-links .text-button{font-size:14px}
+.eyebrow{font-size:13px;letter-spacing:.8px}.track-title{font-size:17px}.track-title small{font-size:12px;letter-spacing:.8px}.status,.audio-note,.privacy{font-size:14px}.upload,.reset,.volume{font-size:14px}.drawing-label{font-size:15px}.drawing-label output{font-size:14px}.drawing-foot p,.drawing-foot button{font-size:13px}.drawing-foot{gap:14px;align-items:flex-start}.drawing-controls{padding-top:15px}.brand-note,.occasion{font-size:11px;letter-spacing:.6px}.brand-name{font-weight:700}.occasion strong{font-family:var(--body)}.bottom{font-size:12px}
+.letter h2{font-family:var(--display);font-size:40px;line-height:1.35;font-weight:600;letter-spacing:0}.letter p{font-size:17px;line-height:1.95}.letter .signature{font-family:var(--display);font-size:29px;line-height:1.5}.letter .small{font-size:14px}.letter-date{font-size:12px}
+.celebration h2{font-family:var(--display);font-size:39px;line-height:1.4;letter-spacing:0}.celebration p{font-size:17px;line-height:1.85}.celebration-intro .to-name{font-size:22px}.video-stage h2{font-size:34px}.video-lead h2{font-size:37px}.ending-stage h2,.ending-stage.has-portrait h2{font-family:var(--body);font-size:29px;line-height:1.5;font-weight:600}.ending-stage h2 span{font-family:var(--display);font-size:1.28em;font-weight:600;letter-spacing:.1px}.ending-stage .ending-wish{font-size:17px!important;line-height:1.85!important}.ending-stage .ending-sign{font-size:14px!important}.ending-stage .card-status,.ending-stage .card-fallback{font-size:14px!important}.ending-actions .open-letter{font-size:15px}.photo-status{font-size:13px!important}
+.card-welcome h1,.guide h1,.hero h1,.letter h2,.video-lead h2,.celebration-intro h2,#endingTitle{animation:type-drift 6.5s ease-in-out infinite}.guide h1,.letter h2{animation-delay:-1.8s}.hero h1,#endingTitle{animation-delay:-3.2s}.card-welcome h1 em,.hero h1 em,.guide h1 em,#endingName{text-shadow:0 3px 16px #efabc51a}
+@keyframes type-drift{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@media(max-width:760px){body{font-size:16px}.card-welcome h1{font-size:37px}.card-description{font-size:15px}.card-cover .login-form label{font-size:14px}.card-cover .open-letter{font-size:14px}.card-cover .privacy{font-size:12px}.card-signature{font-size:12px}.card-topline{font-size:9px;letter-spacing:.4px}.guide h1{font-size:41px}.guide-sub{font-size:16px}.step h2{font-size:18px}.hero h1{font-size:49px;line-height:1.32}.hero .lead{font-size:16px;line-height:1.85}.hero .eyebrow{font-size:11px;letter-spacing:.6px}.hello{font-size:14px}.route-links .text-button{font-size:13px}.track-title{font-size:16px}.status,.audio-note{font-size:13px}.upload,.reset,.volume{font-size:13px}.drawing-label{font-size:14px}.drawing-foot p,.drawing-foot button{font-size:12px}.drawing-foot p{max-width:none}.art{height:450px;min-height:450px}.art .canvas-wrap{inset:0 -8px 120px}.brand-note,.occasion{font-size:9px;letter-spacing:.3px}.brand-note{max-width:135px}.letter h2{font-size:35px}.letter p{font-size:16px}.letter .signature{font-size:27px}.celebration h2{font-size:33px}.video-lead h2{font-size:32px}.video-stage h2{font-size:30px}.celebration p{font-size:16px}.ending-stage h2,.ending-stage.has-portrait h2{font-size:24px;line-height:1.45}.ending-stage .ending-wish{font-size:15px!important;line-height:1.85!important}.ending-stage .ending-sign{font-size:12px!important}.ending-actions .open-letter{font-size:14px}.ending-actions .text-button{font-size:14px}.ending-stage .card-status,.ending-stage .card-fallback{font-size:13px!important}.ending-actions{flex-wrap:wrap;gap:13px}}
+@media(max-width:360px){.card-welcome h1{font-size:33px}.card-cover{padding-left:23px;padding-right:23px}.card-topline{font-size:8px}.card-cover .login-form input::placeholder{font-size:12px}.guide h1{font-size:37px}.hero h1{font-size:44px}.brand-icon{width:27px;height:27px}.brand{gap:8px}.brand-note{max-width:105px}.occasion{max-width:103px}.route-bar{flex-wrap:wrap}.route-links{gap:16px}.hello{max-width:100%}.letter{padding-left:22px;padding-right:22px}.ending-stage h2,.ending-stage.has-portrait h2{font-size:22px}.ending-stage .ending-wish{font-size:15px!important}.ending-actions{gap:10px}.ending-actions .open-letter{font-size:13px;padding:12px 14px}.ending-actions .text-button{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.card-welcome h1,.guide h1,.hero h1,.letter h2,.video-lead h2,.celebration-intro h2,#endingTitle{animation:none!important;translate:none!important}}
+
+.recipient-choices{max-height:310px;overflow:auto;overscroll-behavior:contain;padding:3px;scrollbar-width:thin;scrollbar-color:#bd86a1 #f6e6ed}.recipient-choice{display:flex;align-items:center;gap:13px;padding:9px 12px;font-size:15px}.recipient-choice img{width:52px;height:58px;object-fit:contain;background:#f0dfe7;border:2px solid #fff5f8;border-radius:8px;flex-shrink:0}.recipient-choice span{min-width:0;overflow-wrap:anywhere}.recipient-choice small{display:block;color:#9c6b82;font-size:12px;margin-top:3px}
+@media(max-width:360px){.recipient-choice{gap:10px;font-size:14px;padding:8px}.recipient-choice img{width:44px;height:52px}}
+
+.card-format{border:0;padding:0;margin:0 auto 17px;max-width:470px;display:flex;gap:10px;flex-wrap:wrap;text-align:left}.card-format legend{padding:0;margin-bottom:9px;color:var(--muted);font-size:14px}.card-format label{display:flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid #b894b653;border-radius:14px;color:var(--muted);font-size:15px;cursor:pointer;transition:background .2s,border-color .2s}.card-format label:has(input:checked){background:#f7a6c416;border-color:#f7a6c4;color:var(--pink)}.card-format input{width:16px;height:16px;margin:0;accent-color:var(--pink);cursor:pointer}.card-format label:has(input:focus-visible){outline:2px solid var(--gold);outline-offset:3px}
+@media(max-width:760px){.card-format{margin-left:7px;margin-right:7px;gap:9px}.card-format label{padding:10px 12px;font-size:14px}.card-format legend{font-size:13px}}
+
+.cute-transition{position:fixed;inset:0;z-index:80;pointer-events:none!important;overflow:hidden;contain:strict;user-select:none}.cute-transition.in-dialog{position:absolute;inset:auto 0 auto 0;z-index:8}.cute-transition *{pointer-events:none!important}.cute-bit{position:absolute;display:block;width:18px;height:18px;text-align:center;font:18px/1 "Nunito","Segoe UI",sans-serif;color:#f3b3cf;opacity:0}.cute-bit.petal{width:11px;height:17px;border-radius:85% 12% 85% 40%;background:#e5b9d4}.cute-halo{position:absolute;width:130px;height:130px;margin:-65px;border:2px solid #f4b8d177;border-radius:50%;background:radial-gradient(circle,#e3a9ce16,transparent 68%);opacity:0}
+@media(prefers-reduced-motion:reduce){.cute-transition{display:none!important}}
+
+.ending-firework-ray{position:absolute;width:3px;height:9px;border-radius:50%;opacity:0;box-shadow:0 0 7px currentColor;background:currentColor}.ending-firework-comet{position:absolute;width:3px;height:17px;border-radius:70%;opacity:0;background:linear-gradient(to top,transparent,currentColor);box-shadow:0 -3px 6px currentColor}.ending-bloom{position:absolute;display:block;width:48px;height:48px;opacity:0}.ending-bloom svg{display:block;width:100%;height:100%;overflow:visible}
+.ending-stage .ending-wish{height:auto;min-height:0;overflow-wrap:break-word;text-wrap:pretty;line-height:1.75!important;padding:22px 24px}
+@media(max-width:760px){.ending-stage .ending-wish{padding:20px;line-height:1.8!important}}
+
+/* A rose-paper letter, with quiet motion reserved for its handwritten heading. */
+.letter{width:min(620px,calc(100% - 32px));padding:44px 44px 34px;border:1px solid #e9bed0;border-radius:8px 25px 10px 25px;background:radial-gradient(ellipse at 100% 0,#f1cbd966,transparent 48%),linear-gradient(125deg,#fff5f5,#f9e9ee);color:#68475d;box-shadow:0 28px 100px #0006,inset 0 0 0 7px #fff9;overflow-x:hidden;scrollbar-color:#c693b0 #f9e9ee}
+.letter:before{content:"";display:block;position:absolute;top:9px;left:38%;width:94px;height:20px;transform:rotate(-6deg);background:repeating-linear-gradient(45deg,#cdbada99 0 5px,#e5d9ed99 5px 10px);pointer-events:none}
+.letter .close{position:sticky;float:right;top:0;z-index:3;margin:-28px -28px 0 0;background:#fff5f2ed;border:1px solid #d7b2c777;border-radius:50%;color:#80566f;box-shadow:0 2px 8px #80566f15}
+.letter .letter-date{display:inline-block;padding:5px 12px;border:1px solid #d5a9bf88;border-radius:20px;color:#98627f;font-size:11px;letter-spacing:.8px;background:#fff9}
+.letter .letter-flower{display:block;width:66px;height:54px;margin:16px 0 -5px auto;transform:rotate(9deg);pointer-events:none}
+.letter h2{clear:both;font-size:42px;line-height:1.35;margin:5px 0 24px;color:#85536f;text-shadow:0 2px 10px #c98bab12;animation:none;transform-origin:20% 50%;text-wrap:pretty}
+.letter[open] h2{animation:letter-sway 7.5s ease-in-out infinite}
+.letter p{font-size:17px;line-height:1.95;color:#71556b;margin:0 0 20px;text-wrap:pretty}
+.letter .letter-word{display:inline-block;vertical-align:baseline;transform-origin:50% 100%}
+.letter .signature{color:#a56486;font-size:31px;margin:25px 0 14px;line-height:1.5}
+.letter .small{font-size:13px;color:#96738b;margin:0;padding:15px 0 0;border-top:1px solid #cba6bb66}
+.letter .letter-petals{font-family:var(--display);color:#bc8eaa;letter-spacing:13px;font-size:23px;text-align:center;margin:21px 0 0;user-select:none;pointer-events:none}
+@keyframes letter-sway{0%,100%{translate:0 0;rotate:-.35deg}50%{translate:0 -3px;rotate:.35deg}}
+@media(max-width:760px){.letter{padding:37px 25px 27px}.letter .close{margin:-23px -14px 0 0}.letter h2{font-size:35px;margin-bottom:21px}.letter p{font-size:16px;line-height:1.9}.letter .signature{font-size:28px}.letter .letter-date{font-size:10px;padding:4px 9px}.letter .letter-flower{width:58px;height:47px;margin-top:13px}.letter .small{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.letter[open] h2{animation:none;translate:none;rotate:none}}
+
+
+.liber-autograph{width:140px;max-width:100%;margin:4px 0 22px auto;color:var(--pink);text-align:center;transform:rotate(-5deg)}
+.liber-autograph span{display:block;font-family:var(--display);font-size:56px;font-weight:600;line-height:1.1;letter-spacing:-1px}
+.liber-autograph svg{display:block;width:130px;height:20px;max-width:100%;margin:-4px auto 0;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ending-stage .ending-sign{margin-bottom:7px!important}
+.ending-stage .liber-autograph{margin-right:max(8px,calc((100% - 470px)/2));margin-bottom:24px}
+.letter .liber-autograph{color:#a56486;margin:20px 4px 12px auto}
+.letter .liber-autograph span{font-size:51px}
+@media(max-width:760px){.liber-autograph span{font-size:50px}.letter .liber-autograph span{font-size:47px}}
+
+
+.card-themes{border:0;padding:0;margin:0 auto 20px;max-width:470px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:left}
+.card-themes legend{padding:0;margin-bottom:10px;color:var(--muted);font-size:14px}
+.card-themes label{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:76px;padding:10px 5px;border:1px solid #b894b666;border-radius:13px;color:var(--muted);font-size:13px;line-height:1.35;text-align:center;cursor:pointer}
+.card-themes input{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.card-themes label:has(input:checked){border-color:var(--pink);box-shadow:inset 0 0 0 1px var(--pink);color:var(--ink);background:#ffffff0b}
+.card-themes label:has(input:focus-visible){outline:2px solid var(--pink);outline-offset:3px}
+.card-themes label:has(input:disabled){opacity:.55;cursor:wait}
+.theme-dot{width:22px;height:22px;border:2px solid #ffffff99;border-radius:50%;box-shadow:0 1px 4px #0002}
+.theme-purple{background:#634a71}.theme-pink{background:#efb3cd}.theme-cream{background:linear-gradient(135deg,#e9d8b0 60%,#bb7786 60%)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])){--ink:var(--card-ink);--muted:var(--card-muted);--pink:var(--card-accent);background:linear-gradient(140deg,var(--card-bg1),var(--card-bg2));color:var(--card-ink);border-color:var(--card-back)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .ending-wish{background:var(--card-note);color:var(--card-noteInk)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .ending-art:before{background:var(--card-back)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .recipient-portrait{border-color:var(--card-frame);background:var(--card-photo)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .ending-wish:before{background:repeating-linear-gradient(45deg,var(--card-tape) 0 5px,#ffffffb3 5px 10px)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .open-letter{background:var(--card-button);color:var(--card-buttonInk)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .open-letter:hover{filter:brightness(1.08)}
+.celebration[data-card-theme]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])) .card-format label:has(input:checked){background:#ffffff20;border-color:var(--pink);color:var(--pink)}
+.celebration[data-card-theme="pastel"]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])){color-scheme:light;border-radius:26px}
+.celebration[data-card-theme="pastel"] .ending-wish{border-radius:15px 5px 15px 5px;box-shadow:5px 6px 0 #b76d8c22}
+.celebration[data-card-theme="rose"]:has(#endingStage:not([hidden]),#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])){color-scheme:light;box-shadow:0 30px 100px #0008,inset 0 0 0 7px #fffbf0}
+.celebration[data-card-theme="rose"] .ending-wish{border:1px solid #b4be9b;border-radius:4px;box-shadow:5px 6px 0 #8c9a7225}
+@media(max-width:760px){.card-themes{margin-left:7px;margin-right:7px;gap:6px}.card-themes legend{font-size:13px}.card-themes label{font-size:12px;min-height:75px}}
+
+.celebration:has(#feedbackStage:not([hidden]),#feedbackThanks:not([hidden])){max-width:700px}
+.feedback-stage{padding:14px 10px;text-align:left;max-width:540px;margin:auto}
+.feedback-stage .feedback-eyebrow{font-size:11px;letter-spacing:1.6px;color:var(--pink);margin:0 0 12px}
+.feedback-stage h2{font-family:var(--display);font-size:40px;line-height:1.25;margin:0 0 15px;color:var(--pink)}
+.feedback-stage .feedback-intro{font-size:16px;color:var(--muted);line-height:1.8;margin:0 0 28px}
+.feedback-question{display:block;font-size:16px;line-height:1.6;font-weight:600;color:var(--ink);margin:21px 0 10px}
+.feedback-stage textarea{width:100%;resize:vertical;min-height:105px;padding:14px 16px;border:1px solid var(--card-back,#bfa6d6);border-radius:14px;background:var(--card-note,#fff1f5);color:var(--card-noteInk,#75435d);font:inherit;font-size:16px;line-height:1.7}
+.feedback-stage textarea::placeholder{color:var(--card-noteInk,#75435d);opacity:.7}
+.feedback-stage textarea:focus-visible,.feedback-stage input:focus-visible{outline:2px solid var(--pink);outline-offset:4px}
+.cat-rating{margin:27px 0 18px;padding:0 17px 12px;border:1px solid var(--card-back,#bfa6d6);border-radius:24px;background:#ffffff08}
+.cat-rating .feedback-question{text-align:center;margin-top:20px}
+.feedback-cat{width:230px;max-width:90%;height:170px;margin:0 auto}
+.feedback-cat svg{display:block;width:100%;height:100%;overflow:visible}
+.cat-score-line{display:flex;align-items:center;justify-content:center;gap:15px;margin:7px 0 18px}
+#catScoreOutput{font-size:23px;font-weight:700;color:var(--pink);font-variant-numeric:tabular-nums}
+#catMood{font-size:14px;color:var(--muted)}
+#catScore{display:block;width:100%;appearance:none;-webkit-appearance:none;height:48px;margin:0;background:transparent;cursor:ew-resize;touch-action:pan-y}
+#catScore::-webkit-slider-runnable-track{height:9px;border-radius:10px;background:linear-gradient(to right,var(--pink) var(--cat-fill,50%),var(--card-back,#bfa6d6) var(--cat-fill,50%))}
+#catScore::-moz-range-track{height:9px;border-radius:10px;background:var(--card-back,#bfa6d6)}
+#catScore::-moz-range-progress{height:9px;border-radius:10px;background:var(--pink)}
+#catScore::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:48px;height:48px;margin-top:-20px;border:0;border-radius:50%;background-image:var(--cat-thumb);background-size:contain;background-repeat:no-repeat;filter:drop-shadow(0 3px 3px #0002)}
+#catScore::-moz-range-thumb{width:48px;height:48px;border:0;border-radius:50%;background-image:var(--cat-thumb);background-size:contain;background-repeat:no-repeat;filter:drop-shadow(0 3px 3px #0002)}
+.cat-scale{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;gap:12px}
+.feedback-stage .cat-hint{text-align:center;color:var(--muted);font-size:12px;margin:12px 0 0;line-height:1.6}
+.feedback-stage .feedback-privacy{color:var(--muted);font-size:12px;line-height:1.7;margin:18px 0}
+#sendFeedback{width:100%;justify-content:center;min-height:48px}
+#feedbackStatus{font-size:14px;line-height:1.6;margin:12px 0;min-height:23px;color:var(--pink)}
+.feedback-stage .text-button{display:block;margin:10px auto;font-size:14px}
+.feedback-next{max-width:470px;margin:22px auto 0;text-align:left;border-top:1px solid var(--card-back,#bfa6d6);padding-top:20px}
+.feedback-next p{font-size:14px!important;line-height:1.6!important;color:var(--muted);margin:0 0 13px}
+.feedback-next .open-letter{width:100%;justify-content:center}
+.feedback-thanks{text-align:center;padding:35px 8px}.feedback-thanks p{font-size:17px;line-height:1.8;color:var(--muted)}
+.feedback-thanks .liber-autograph{margin:24px auto 32px}.thanks-heart{font-size:76px;color:var(--pink);line-height:1.3;margin-bottom:18px}
+.cat-tail{transform-origin:177px 142px;animation:cat-tail-wag 2.8s ease-in-out infinite}
+@keyframes cat-tail-wag{0%,100%{rotate:-5deg}50%{rotate:7deg}}
+@media(max-width:760px){.feedback-stage{padding:10px 0}.feedback-stage h2{font-size:34px}.feedback-stage .feedback-intro{font-size:15px}.feedback-question{font-size:15px}.cat-rating{padding-left:10px;padding-right:10px}.feedback-cat{height:150px}.cat-score-line{gap:9px}#catScoreOutput{font-size:21px}#catMood{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.cat-tail{animation:none}}
+
+</style>
+
+
+
+<!-- Embedded font licenses: Nunito and Dancing Script
+Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting — in part or in whole — any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+
+Copyright 2016 The Dancing Script Project Authors (https://github.com/googlefonts/DancingScript), with Reserved Font Name 'Dancing Script'.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting — in part or in whole — any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+-->
+</head>
+
+
+
+<body>
+
+
+
+<div class="page">
+
+
+
+ <header class="masthead"><div class="brand"><span class="brand-icon" aria-hidden="true">✧</span><div><div class="brand-name">LIBER</div><div class="brand-note">GỬI BẠN, VỚI YÊU THƯƠNG</div></div></div><div class="occasion"><strong>20 . 10</strong>NGÀY PHỤ NỮ VIỆT NAM</div></header>
+
+
+
+
+
+
+
+ <div id="sceneHost" class="scene-host">
+
+ <main id="welcome" class="welcome card-welcome" aria-labelledby="welcomeTitle">
+
+
+  <div class="locked-card" id="lockedCard">
+
+
+   <div class="card-inside" id="cardInside" aria-hidden="true"><span class="inside-heart" aria-hidden="true">♡</span><p>Đã mở khóa yêu thương</p><h2>Gửi <span id="unlockName">bạn</span>,</h2><p>Món quà này là của bạn.</p></div>
+
+
+   <div class="card-cover" id="cardCover">
+
+
+    <div class="card-topline"><span>LIBER · 20/10</span><span aria-hidden="true">✧</span><span>GỬI RIÊNG BẠN</span></div>
+
+
+    <svg class="card-florals" viewBox="0 0 220 116" fill="none" aria-hidden="true"><path d="M110 103Q64 83 53 34M110 103Q139 74 168 32M110 103V23" stroke="#8caa98" stroke-width="2"/><ellipse cx="74" cy="81" rx="17" ry="7" transform="rotate(30 74 81)" fill="#96b09f"/><ellipse cx="146" cy="75" rx="17" ry="7" transform="rotate(-35 146 75)" fill="#96b09f"/><g fill="#d69ab5"><ellipse cx="53" cy="22" rx="10" ry="14"/><ellipse cx="65" cy="33" rx="14" ry="10"/><ellipse cx="56" cy="46" rx="10" ry="14"/><ellipse cx="41" cy="34" rx="14" ry="10"/></g><g fill="#b7a2cb"><ellipse cx="110" cy="12" rx="10" ry="12"/><ellipse cx="122" cy="23" rx="12" ry="10"/><ellipse cx="110" cy="35" rx="10" ry="12"/><ellipse cx="98" cy="23" rx="12" ry="10"/></g><g fill="#e9b9ca"><ellipse cx="169" cy="20" rx="10" ry="13"/><ellipse cx="180" cy="32" rx="13" ry="10"/><ellipse cx="169" cy="44" rx="10" ry="13"/><ellipse cx="157" cy="32" rx="13" ry="10"/></g><g fill="#e9c18c"><circle cx="53" cy="34" r="6"/><circle cx="110" cy="23" r="6"/><circle cx="169" cy="32" r="6"/></g><path d="M110 99c-25-19-36 11 0 12 36-1 25-31 0-12Z" fill="#b7698d"/></svg>
+
+
+    <h1 id="welcomeTitle" class="route-title" tabindex="-1">Có một lời thương<br><em>đang chờ bạn.</em></h1>
+
+
+    <p class="card-description">Tên của bạn là chiếc chìa khóa<br>mở tấm thiệp này.</p>
+
+
+    <form id="loginForm" class="login-form" novalidate><label for="nickname">Tên của bạn</label><input id="nickname" name="nickname" autocomplete="given-name" maxlength="40" placeholder="Ví dụ: Gia Hân, Hải Yến, Khánh Linh" required aria-describedby="nameError loginHint"><p id="nameError" class="field-error" role="alert"></p><div id="recipientChoices" class="recipient-choices" role="group" aria-label="Chọn tên của bạn" hidden></div><button type="submit" class="open-letter" id="unlockCard"><svg width="17" height="19" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.7"/><circle cx="10" cy="14" r="1.4" fill="currentColor"/><path d="M10 14v3" stroke="currentColor" stroke-width="1.5"/></svg><span>Mở khóa tấm thiệp</span><span aria-hidden="true">→</span></button><p id="loginHint" class="privacy">Tên ngắn hoặc không dấu đều được. Không cần mật khẩu.</p></form>
+
+
+    <div class="card-signature">Từ Liber, với thật nhiều yêu thương ♡</div>
+
+
+   </div>
+
+
+  </div>
+
+
+  <p id="unlockStatus" class="unlock-status" role="status"></p>
+
+
+ </main>
+
+
+ <section id="guide" class="guide" hidden aria-labelledby="guideTitle"><div class="eyebrow">Hướng dẫn nhỏ xíu</div><h1 id="guideTitle" class="route-title" tabindex="-1"><span id="guideName">Bạn</span> ơi,<br>Liber có một<br><em>bất ngờ dành cho bạn.</em></h1><p class="guide-sub">Một chút hướng dẫn trước khi mở quà nhé.</p><div class="steps"><article class="step"><span class="step-icon" aria-hidden="true">↔</span><span class="step-number">BƯỚC 01</span><h2>Kéo một chút, tim hiện ra</h2></article><article class="step"><span class="step-icon" aria-hidden="true">♡</span><span class="step-number">BƯỚC 02</span><h2>Mở lá thư dành cho bạn</h2></article><article class="step"><span class="step-icon" aria-hidden="true">♫</span><span class="step-number">BƯỚC 03</span><h2>Thêm một chút giai điệu</h2></article></div><div class="guide-actions"><button type="button" class="open-letter" id="enterMain">Bắt đầu khám phá <span aria-hidden="true">♡ →</span></button><button type="button" class="text-button" id="backWelcome">Mình muốn đổi tên</button></div></section>
+
+
+
+ <main id="mainPage" hidden>
+
+
+
+ <div class="route-bar"><div class="hello">Xin chào, <span id="displayName">bạn</span> ♡</div><nav class="route-links" aria-label="Trợ giúp"><button type="button" class="text-button" id="videoSetup">Thêm video</button><button type="button" class="text-button" id="changeName">Đổi tên</button></nav></div>
+
+
+
+  <section class="hero" aria-labelledby="title">
+
+
+
+   <div class="intro"><h1 id="title" class="route-title" tabindex="-1">Tự tay vẽ<br><em>yêu thương.</em></h1><p class="lead">Một trái tim dành riêng cho bạn,<br>với yêu thương từ <strong>CLB Liber</strong>.</p><button type="button" class="open-letter" id="openLetter">Mở lời chúc <span aria-hidden="true">↗</span></button></div>
+
+
+
+   <div class="art"><div class="canvas-wrap"><canvas id="heart" role="img" aria-label="Trái tim ba chiều được tạo bởi hàng ngàn hạt sáng màu hồng. Kéo ngang để xoay.">Trái tim ánh sáng gửi các bạn nữ CLB Liber.</canvas></div><div class="drawing-controls"><div class="drawing-label"><label for="drawProgress">Kéo để vẽ trái tim</label><output id="progressValue" for="drawProgress">0%</output></div><input id="drawProgress" class="draw-range" type="range" min="0" max="100" step="0.1" value="0" aria-describedby="drawStatus" aria-valuetext="0 phần trăm, bắt đầu vẽ trái tim"><div class="drawing-foot"><p id="drawStatus" role="status">Kéo sang phải để bắt đầu nhé.</p></div></div></div>
+
+
+
+  </section>
+
+
+
+  <section aria-label="Nhạc nền"><div class="audio-panel"><button type="button" class="play" id="play" aria-label="Bật nhạc nền" aria-pressed="false">▷</button><div class="track"><p class="track-title"><span id="trackName">Giai điệu dành cho Liber</span></p><p class="status" id="audioStatus" role="status">Nhạc sẽ tự bật khi vào trang chính.</p></div><div class="audio-controls"><label class="volume">Âm lượng <input id="volume" type="range" min="0" max="100" value="40" aria-label="Âm lượng nhạc nền"></label><label class="upload">＋ Chọn nhạc của bạn<input id="musicFile" type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a,.aac,.flac" aria-label="Chọn file nhạc từ thiết bị"></label><button type="button" class="reset" id="resetMusic" hidden>Nhạc mặc định</button></div></div></section>
+
+
+
+ </main>
+
+
+
+ </div>
+
+ <footer class="bottom"><span>MỪNG NGÀY 20/10 · CLB LIBER</span></footer>
+
+
+
+</div>
+
+
+
+<dialog id="letter" class="letter" aria-labelledby="letterTitle"><button type="button" class="close" id="closeLetter" aria-label="Đóng lời chúc">×</button><div class="letter-date">20 / 10 · MỘT LÁ THƯ NHỎ</div><svg class="letter-flower" viewBox="0 0 80 64" aria-hidden="true"><path d="M41 56Q36 34 45 18M40 48Q19 44 19 30Q35 30 40 48M41 39Q60 39 64 25Q47 25 41 39" fill="#acbaa3" stroke="#91a48f" stroke-width="2"/><g fill="#e9aec8" stroke="#c98fae" stroke-width="1.2"><ellipse cx="45" cy="11" rx="7" ry="10"/><ellipse cx="55" cy="19" rx="10" ry="7"/><ellipse cx="50" cy="28" rx="7" ry="10"/><ellipse cx="37" cy="26" rx="9" ry="7"/><ellipse cx="35" cy="15" rx="9" ry="7"/></g><circle cx="44" cy="20" r="6" fill="#f1d69d"/><path d="M64 49q-8-8-10-2q-2 5 10 11q12-10 6-13q-3-2-6 4" fill="#d6b5d6"/></svg><h2 id="letterTitle">Gửi <span id="letterName">bạn</span>,<br>một sắc màu rất riêng của Liber,</h2><p>Chúc các bạn nữ CLB Liber một ngày 20/10 đầy ắp niềm vui, những cái ôm ấm áp và thật nhiều yêu thương.</p><p>Mong bạn luôn tự tin với điều mình chọn, đủ can đảm theo đuổi điều mình yêu và đủ dịu dàng để chăm sóc chính mình. Dù hôm nay rực rỡ hay chỉ muốn nghỉ ngơi một chút, bạn vẫn luôn xứng đáng được trân trọng.</p><p>Cảm ơn bạn vì những ý tưởng, tiếng cười và sắc màu riêng đã mang đến cho Liber. Chúc những ngày phía trước của bạn có thật nhiều cơ hội, tình bạn đẹp và những ước mơ thành hình.</p><p class="signature">Cứ là bạn, cứ rạng ngời. ♡</p><p class="small">Thân thương gửi tới tất cả các bạn nữ CLB Liber.</p><div class="liber-autograph"><span>Liber</span><svg viewBox="0 0 130 20" aria-hidden="true"><path d="M4 13Q51 1 108 9M29 18Q65 10 95 14M115 6C110-1 102 5 115 15C130 5 122-1 115 6"/></svg></div><div class="letter-petals" aria-hidden="true">✧ ♡ ✧</div></dialog>
+
+
+
+
+
+
+
+<input id="greetingFile" type="file" accept="video/*,.mp4,.webm,.mov" hidden aria-label="Chọn video lời chúc">
+
+
+
+<dialog id="celebration" class="celebration" aria-labelledby="celebrationTitle">
+
+
+
+ <button type="button" class="close" id="closeCelebration" aria-label="Đóng video và trở về trái tim">×</button>
+
+
+
+ <div id="celebrationSceneHost" class="scene-host">
+
+ <div id="celebrationIntro" class="celebration-intro"><div id="confetti" class="confetti" aria-hidden="true"></div><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 85 15 51C-8 26 25 0 50 26 75 0 108 26 85 51Z" fill="#f7a6c4"/></svg><h2 id="celebrationTitle">Một trái tim đầy yêu thương,<span class="for-name">dành riêng cho <span id="completeName">bạn</span>!</span></h2><p>Chúc bạn một ngày 20/10 thật rạng rỡ.</p></div>
+
+
+
+<div id="videoLead" class="video-lead" hidden><span class="lead-heart" aria-hidden="true">♡</span><h2 id="videoLeadTitle">Có vài chàng trai hơi ngại<br>nói lời dễ thương…</h2><p>Nhưng hôm nay thì có ngoại lệ.<br>Cùng nghe điều các bạn ấy muốn gửi đến bạn nhé!</p><button type="button" class="open-letter" id="skipVideoLead">Xem lời chúc <span aria-hidden="true">→</span></button></div>
+
+
+
+ <div id="videoStage" class="video-stage" hidden><h2 id="videoTitle">Lời chúc từ các bạn trai</h2><p>Gửi những cô gái thân thương của CLB Liber ♡</p><video id="greetingVideo" controls playsinline preload="metadata" hidden aria-label="Video lời chúc của các bạn trai CLB Liber"></video><div id="videoEmpty" class="video-empty"><p>Chưa có video lời chúc.<br>Chọn video từ thiết bị để trình chiếu nhé.</p><button type="button" class="open-letter" id="chooseGreeting">Chọn video lời chúc</button></div><p id="videoStatus" class="video-status" role="status"></p><div class="video-actions"><button type="button" class="open-letter" id="startGreeting" hidden>Phát video</button><button type="button" class="text-button" id="replaceGreeting" hidden>Đổi video</button></div></div>
+
+
+
+
+
+
+
+ <div id="endingStage" class="ending-stage" hidden><div class="ending-art" id="endingArt"><canvas id="endingDecor" class="ending-decor" width="920" height="780" aria-hidden="true"></canvas><img id="recipientPortrait" class="recipient-portrait" hidden alt=""><p id="photoStatus" class="photo-status" role="status" hidden></p><canvas id="bouquet" width="720" height="560" role="img" aria-label="Bó hoa hồng, tím và vàng được gói bằng giấy hồng, thắt nơ"></canvas></div><h2 id="endingTitle"><span id="endingName">Bạn</span> ơi,<br>hãy luôn rạng rỡ nhé!</h2><p class="ending-wish" id="endingWish">Mừng ngày 20/10, chúc bạn có thật nhiều niềm vui, những tình bạn chân thành và những khoảnh khắc được yêu thương. Mong các dự định của bạn dần thành hiện thực, những ngày bận rộn vẫn có phút nghỉ ngơi và những ngày bình thường cũng có điều để mỉm cười. Liber gửi bạn lời chúc vui khỏe và một hành trình thật nhiều kỷ niệm đẹp!</p><p class="ending-sign">Mừng 20/10. Từ các bạn trai Liber ♡</p><div class="liber-autograph"><span>Liber</span><svg viewBox="0 0 130 20" aria-hidden="true"><path d="M4 13Q51 1 108 9M29 18Q65 10 95 14M115 6C110-1 102 5 115 15C130 5 122-1 115 6"/></svg></div><fieldset class="card-themes"><legend>Chọn phong cách thiệp</legend><label><input type="radio" name="cardTheme" value="scrapbook" checked><span class="theme-dot theme-purple" aria-hidden="true"></span><span>Tím scrapbook</span></label><label><input type="radio" name="cardTheme" value="pastel"><span class="theme-dot theme-pink" aria-hidden="true"></span><span>Hồng pastel</span></label><label><input type="radio" name="cardTheme" value="rose"><span class="theme-dot theme-cream" aria-hidden="true"></span><span>Kem hoa hồng</span></label></fieldset><fieldset class="card-format"><legend>Tỉ lệ ảnh tải xuống</legend><label><input type="radio" name="cardFormat" value="classic" checked><span>Thiệp 3:4</span></label><label><input type="radio" name="cardFormat" value="story"><span>Story 9:16</span></label></fieldset><div class="ending-actions"><button type="button" id="saveCard" class="open-letter">Tải thiệp <span aria-hidden="true">↓</span></button><button type="button" id="replayGreeting" class="text-button">Xem lại video</button></div><div class="feedback-next"><p>Trước khi khép lại, gửi chúng mình một chút cảm nhận nhé?</p><button type="button" id="openFeedback" class="open-letter">Chia sẻ cảm nhận <span aria-hidden="true">♡</span></button></div><p id="cardStatus" class="card-status" role="status"></p><a id="cardFallback" class="card-fallback" hidden target="_blank" rel="noopener">Mở ảnh thiệp để lưu</a></div><section id="feedbackStage" class="feedback-stage" hidden aria-labelledby="feedbackTitle">
+ <p class="feedback-eyebrow">MỘT CHÚT CẢM NHẬN GỬI LIBER</p>
+ <h2 id="feedbackTitle" tabindex="-1">Hôm nay của bạn thế nào?</h2>
+ <p class="feedback-intro"><span id="feedbackName"></span> ơi, kể chúng mình nghe nhé.<br>Mọi cảm nhận đều được trân trọng.</p>
+ <form id="feedbackForm">
+  <label class="feedback-question" for="feedbackFeeling">Chị em cảm thấy như thế nào về ngày 20/10?</label>
+  <textarea id="feedbackFeeling" name="feelings" rows="3" maxlength="1500" required placeholder="Một niềm vui, một cảm xúc, hoặc điều bạn muốn tụi mình làm tốt hơn…"></textarea>
+  <label class="feedback-question" for="feedbackImpression">Đâu là phần khiến chị em ấn tượng nhất?</label>
+  <textarea id="feedbackImpression" name="impression" rows="3" maxlength="1000" required placeholder="Một khoảnh khắc trong ngày, lời chúc, video, tấm thiệp…"></textarea>
+  <div class="cat-rating">
+   <label class="feedback-question" for="catScore">Bạn chấm ngày hôm nay bao nhiêu điểm?</label>
+   <div id="feedbackCat" class="feedback-cat" aria-hidden="true"></div>
+   <div class="cat-score-line"><output id="catScoreOutput" for="catScore">50 / 100</output><span id="catMood">Bình thường</span></div>
+   <input id="catScore" name="score" type="range" min="0" max="100" step="1" value="50" aria-describedby="catScaleHint">
+   <div class="cat-scale" id="catScaleHint"><span>0 · Buồn một chút</span><span>100 · Vui hết nấc</span></div>
+   
+  </div>
+  
+  <button type="submit" id="sendFeedback" class="open-letter">Gửi cảm nhận <span aria-hidden="true">♡</span></button>
+  <p id="feedbackStatus" role="status" aria-live="polite"></p>
+ </form>
+ <button type="button" id="feedbackBack" class="text-button">Quay lại tấm thiệp</button>
+</section>
+<section id="feedbackThanks" class="feedback-stage feedback-thanks" hidden aria-labelledby="feedbackThanksTitle">
+ <div class="thanks-heart" aria-hidden="true">♡</div><h2 id="feedbackThanksTitle" tabindex="-1">Đã nhận được cảm nhận của bạn!</h2>
+ <p><span id="feedbackThanksName"></span> ơi, cảm ơn bạn đã dành thời gian sẻ chia. Liber sẽ giữ những lời nhắn này để những lần gặp sau thêm đáng nhớ.</p>
+ <div class="liber-autograph"><span>Liber</span><svg viewBox="0 0 130 20" aria-hidden="true"><path d="M4 13Q51 1 108 9M29 18Q65 10 95 14"/></svg></div>
+ <button type="button" id="feedbackReturnCard" class="open-letter">Về thiệp của bạn</button><button type="button" id="feedbackEdit" class="text-button">Sửa câu trả lời</button>
+</section>
+
+
+
+
+ </div>
+
+</dialog>
+
+
+
+
+
+
+
+<noscript><p style="padding:24px;text-align:center">Bật JavaScript trong trình duyệt để xem trái tim chuyển động và nghe nhạc. Chúc các bạn nữ CLB Liber một ngày 20/10 thật nhiều niềm vui và yêu thương!</p></noscript>
+
+
+
+<script>
+
+
+
+/* Standalone, offline page. No external assets, libraries, tracking or network requests.
+
+
+
+   Reference curve: y = cbrt(x*x) + sqrt(3-x*x) * sin(m*pi*x).
+
+
+
+   Its 3D extension uses z = .38 * sqrt(3-x*x) * cos(m*pi*x).
+
+
+
+   The original synthesized note sequence below uses no sampled recording. */
+
+
+
+(() => {
+
+
+
+ 'use strict';
+
+
+
+ const $=id=>document.getElementById(id), canvas=$('heart'), ctx=canvas.getContext('2d');
+
+
+
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+
+
+
+ let paused=reduced.matches,w=0,h=0,time=0,last=0,raf=0,angle=0,drag=null,progress=0,activePage='welcome',nickname='';
+
+
+
+ let curve=[],tier=-1,completionShown=false;
+
+
+
+ const stars=Array.from({length:36},()=>({x:Math.random(),y:Math.random(),r:.4+Math.random(),p:Math.random()*6.28}));
+
+
+
+ function buildCurve(){
+
+
+
+  // Match the reference equation, adding an elliptical depth to its oscillations.
+
+
+
+  // Higher slider values increase m; this changes geometry rather than opacity.
+
+
+
+  const m=.2+99.8*(progress/100)**2,segments=Math.ceil(1000+m*65),depth=.38;
+
+
+
+  curve=[];
+
+
+
+  for(let i=0;i<=segments;i++){const x=-Math.sqrt(3)+2*Math.sqrt(3)*i/segments,envelope=Math.sqrt(Math.max(0,3-x*x)),phase=m*Math.PI*x;
+
+
+
+   curve.push({x:x/1.8,y:-(Math.cbrt(x*x)+envelope*Math.sin(phase)-.6)/1.8,z:depth*envelope*Math.cos(phase)/1.8,p:i*.41});}
+
+
+
+ }
+
+
+
+ function project(p){const rot=angle+.12+Math.sin(time*.3)*.09,ca=Math.cos(rot),sa=Math.sin(rot),rx=p.x*ca+p.z*sa,rz=p.z*ca-p.x*sa,tilt=.07,y=p.y*Math.cos(tilt)-rz*Math.sin(tilt),z=p.y*Math.sin(tilt)+rz*Math.cos(tilt),perspective=4.5/(4.5+z),scale=Math.min(w*.40,h*.32);return{x:w/2+rx*scale*perspective,y:h*.47+y*scale*perspective,z};}
+
+
+
+ function resize(){const rect=canvas.getBoundingClientRect();w=rect.width;h=rect.height;if(!w||!h)return;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx?.setTransform(dpr,0,0,dpr,0,0);draw();}
+
+
+
+ function draw(){
+
+
+
+  if(!ctx||!w||!h)return;ctx.clearRect(0,0,w,h);
+
+
+
+  for(const s of stars){ctx.fillStyle=`rgba(237,203,223,${.12+.16*(1+Math.sin(time*.5+s.p))/2})`;ctx.beginPath();ctx.arc(s.x*w,s.y*h,s.r,0,Math.PI*2);ctx.fill();}
+
+
+
+  const projected=curve.map(project);ctx.beginPath();for(let i=0;i<projected.length;i++){const p=projected[i];if(i===0)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);}
+
+
+
+  ctx.strokeStyle=progress>65?'#ef83b477':'#f79fc9ce';ctx.lineWidth=progress>65?.7:1.35;ctx.shadowColor='#ff87c6';ctx.shadowBlur=progress>60?2:7;ctx.stroke();ctx.shadowBlur=0;
+
+
+
+  // Shimmering points follow the actual curve, including on partial drawings.
+
+
+
+  const step=Math.max(2,Math.floor(curve.length/380));ctx.globalCompositeOperation='lighter';
+
+
+
+  for(let i=0;i<projected.length;i+=step){const p=projected[i],glow=.3+.6*(1+Math.sin(time*1.3+curve[i].p))/2;ctx.fillStyle=`rgba(255,192,216,${glow})`;ctx.beginPath();ctx.arc(p.x,p.y,progress>60?1.05:.8,0,Math.PI*2);ctx.fill();}
+
+
+
+  ctx.globalCompositeOperation='source-over';
+
+
+
+  drawGrowingFlowers();
+
+
+
+ }
+
+
+
+ function frame(now){raf=0;if(paused||document.hidden||activePage!=='mainPage'||$('celebration').open)return;if(last)time+=Math.min((now-last)/1000,.05);last=now;draw();raf=requestAnimationFrame(frame);}
+
+
+
+ function start(){last=0;if(!paused&&!document.hidden&&activePage==='mainPage'&&!$('celebration').open&&!raf)raf=requestAnimationFrame(frame);}
+
+
+
+ function stopFrames(){cancelAnimationFrame(raf);raf=0;}
+
+
+
+ reduced.addEventListener('change',e=>{paused=e.matches;if(paused){stopFrames();draw();}else start();});
+
+
+
+ function setProgress(value){progress=Math.max(0,Math.min(100,Number(value)||0));$('drawProgress').value=String(progress);$('drawProgress').style.setProperty('--fill',progress+'%');$('progressValue').textContent=Math.round(progress)+'%';$('drawProgress').setAttribute('aria-valuetext',Math.round(progress)+' phần trăm, '+(progress===100?'trái tim hoàn thành':'đang vẽ trái tim'));
+
+
+
+  const next=progress===100?4:progress>=65?3:progress>=30?2:progress>0?1:0;
+
+
+
+  if(next!==tier){tier=next;$('drawStatus').textContent=['Kéo sang phải để bắt đầu nhé.','Thêm một chút yêu thương…','Trái tim đang hiện ra rồi!','Sắp xong rồi nhé ♡','Dành tặng bạn, trọn vẹn yêu thương ♡'][tier];$('drawStatus').classList.toggle('completion',tier===4);}
+
+
+
+  canvas.setAttribute('aria-label','Trái tim đã vẽ '+Math.round(progress)+' phần trăm, hoa nở dần xung quanh. Kéo trên hình để xoay.');
+
+
+
+  buildCurve();draw();
+
+
+
+  if(progress<95)completionShown=false;
+
+
+
+  if(progress===100&&!completionShown){completionShown=true;showCelebration();}
+
+
+
+ }
+
+
+
+ $('drawProgress').addEventListener('input',e=>setProgress(e.target.value));
+
+
+
+ canvas.addEventListener('pointerdown',e=>{drag={x:e.clientX,angle};canvas.setPointerCapture(e.pointerId);});canvas.addEventListener('pointermove',e=>{if(drag){angle=drag.angle+(e.clientX-drag.x)*.008;draw();}});for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,()=>drag=null);
+
+
+
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)stopFrames();else start();});
+
+
+
+ new ResizeObserver(resize).observe(canvas);buildCurve();
+
+
+
+
+
+ let routeBusy=false;
+
+ const modalMotions=new Set(),closingDialogs=new WeakSet();
+
+ let modalEpoch=0;
+
+ async function motion(element,frames,options={},bag){if(reduced.matches||document.hidden||!element.animate)return true;let animation;try{animation=element.animate(frames,{duration:280,easing:'cubic-bezier(.2,.7,.25,1)',...options});if(bag)bag.add(animation);await animation.finished;return true;}catch(e){return false;}finally{if(bag&&animation)bag.delete(animation);}}
+
+ function sceneHeight(element){const style=getComputedStyle(element);return element.getBoundingClientRect().height+(parseFloat(style.marginTop)||0)+(parseFloat(style.marginBottom)||0);}
+
+
+ const cuteEffects=new Map();
+ function clearCuteEffects(container){const effect=cuteEffects.get(container);if(!effect)return;effect.animations.forEach(a=>a.cancel());effect.layer.remove();cuteEffects.delete(container);}
+
+ function slowEndingCelebration(scene){
+  if(reduced.matches||document.hidden)return;
+  const container=scene.closest('dialog');if(!container||!container.open)return;clearCuteEffects(container);
+  const layer=document.createElement('div');layer.className='cute-transition in-dialog ending-fireworks';layer.setAttribute('aria-hidden','true');layer.style.top=container.scrollTop+'px';
+  const w=container.clientWidth,h=Math.min(innerHeight*.88,scene.scrollHeight+60),small=w<500;layer.style.height=h+'px';container.append(layer);
+  const effect={layer,animations:[]};cuteEffects.set(container,effect);
+  const run=(el,frames,opts)=>{if(!el.animate)return;effect.animations.push(el.animate(frames,{fill:'both',...opts}));};
+  const colors=['#efb2d0','#d3b9ed','#f3d49d'];
+  const bursts=[[.11,.16,0],[.90,.30,850],[.73,.075,1750]];
+  bursts.forEach(([fx,fy,delay],index)=>{
+   const x=w*fx,y=Math.max(28,Math.min(h*.52,h*fy)),color=colors[index],radius=small?43:69;
+   const comet=document.createElement('i');comet.className='ending-firework-comet';comet.style.left=x+'px';comet.style.top=y+'px';comet.style.color=color;layer.append(comet);
+   run(comet,[{opacity:0,transform:'translate(-50%,95px) scale(.6)'},{opacity:.6,offset:.35},{opacity:.6,offset:.8},{opacity:0,transform:'translate(-50%,0) scale(.8)'}],{delay,duration:1050,easing:'cubic-bezier(.25,.6,.3,1)'});
+   for(let i=0;i<16;i++){
+    const a=i*Math.PI*2/16,dx=Math.cos(a)*radius,dy=Math.sin(a)*radius;
+    const ray=document.createElement('i');ray.className='ending-firework-ray';ray.style.left=x+'px';ray.style.top=y+'px';ray.style.color=color;layer.append(ray);
+    const angle=a*180/Math.PI+90;
+    run(ray,[{opacity:0,transform:`translate(-50%,-50%) rotate(${angle}deg) scale(.2)`},{opacity:.78,offset:.19},{opacity:.55,offset:.55,transform:`translate(calc(-50% + ${dx*.78}px),calc(-50% + ${dy*.78}px)) rotate(${angle}deg) scale(1)`},{opacity:0,transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy+22}px)) rotate(${angle}deg) scale(.3)`}],{delay:delay+850,duration:2650,easing:'cubic-bezier(.16,.5,.3,1)'});
+   }
+  });
+  const blooms=small?[[.07,.48,500],[.94,.61,1350],[.14,.08,2200],[.86,.11,950]]:[[.06,.50,500],[.95,.62,1350],[.24,.065,2200],[.83,.10,950],[.08,.75,1600],[.93,.43,2450]];
+  blooms.forEach(([fx,fy,delay],index)=>{
+   const flower=document.createElement('span');flower.className='ending-bloom';const size=small?31+(index%2)*7:43+(index%2)*10;flower.style.width=size+'px';flower.style.height=size+'px';flower.style.left=(w*fx-size/2)+'px';flower.style.top=(h*fy-size/2)+'px';
+   const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 60 60');
+   for(let petal=0;petal<5;petal++){const ellipse=document.createElementNS(ns,'ellipse');ellipse.setAttribute('cx','30');ellipse.setAttribute('cy','16');ellipse.setAttribute('rx','9');ellipse.setAttribute('ry','15');ellipse.setAttribute('fill',colors[index%colors.length]);ellipse.setAttribute('transform',`rotate(${petal*72} 30 30)`);svg.append(ellipse);}
+   const center=document.createElementNS(ns,'circle');center.setAttribute('cx','30');center.setAttribute('cy','30');center.setAttribute('r','7');center.setAttribute('fill','#f5d49a');svg.append(center);flower.append(svg);layer.append(flower);
+   run(flower,[{opacity:0,transform:'scale(.1) rotate(-35deg)'},{opacity:.9,transform:'scale(1) rotate(0deg)',offset:.43},{opacity:.78,transform:'scale(1.06) rotate(9deg)',offset:.72},{opacity:0,transform:'translateY(-13px) scale(.92) rotate(18deg)'}],{delay,duration:3200,easing:'ease-in-out'});
+  });
+  // The card remains interactive while the slow decorative sequence plays.
+  for(const [i,el]of [$('recipientPortrait'),$('endingDecor')].entries()){if(!el.hidden)run(el,[{opacity:0,translate:'0 15px',scale:'.96'},{opacity:1,translate:'0 0',scale:'1'}],{duration:1450,delay:i*220,easing:'cubic-bezier(.2,.65,.25,1)'});}
+  Promise.allSettled(effect.animations.map(a=>a.finished)).then(()=>{if(cuteEffects.get(container)===effect){layer.remove();cuteEffects.delete(container);}});
+ }
+
+ function cuteEntrance(scene,kind='page'){
+  if(kind==='ending'){slowEndingCelebration(scene);return;}
+  if(reduced.matches||document.hidden)return;
+  const container=scene.closest('dialog')||document.body;clearCuteEffects(container);
+  const layer=document.createElement('div');layer.className='cute-transition'+(container===document.body?'':' in-dialog');layer.setAttribute('aria-hidden','true');
+  const inDialog=container!==document.body,cw=inDialog?container.clientWidth:innerWidth,ch=inDialog?container.clientHeight:innerHeight;
+  if(inDialog){layer.style.top=container.scrollTop+'px';layer.style.height=ch+'px';}
+  container.append(layer);const effect={layer,animations:[]};cuteEffects.set(container,effect);
+  const anchor=kind==='unlock'?$('welcomeTitle'):kind==='ending'?$('recipientPortrait'):scene.querySelector('h1,h2')||scene;
+  const rect=anchor.getBoundingClientRect(),base=inDialog?container.getBoundingClientRect():{left:0,top:0};
+  const x=Math.max(40,Math.min(cw-40,rect.left+rect.width*.5-base.left)),y=Math.max(55,Math.min(ch*.55,rect.top+rect.height*.5-base.top));
+  const run=(el,frames,options)=>{if(!el.animate)return;const a=el.animate(frames,options);effect.animations.push(a);};
+  const halo=document.createElement('i');halo.className='cute-halo';halo.style.left=x+'px';halo.style.top=y+'px';layer.append(halo);
+  run(halo,[{opacity:0,transform:'scale(.35)'},{opacity:.75,transform:'scale(1)',offset:.22},{opacity:0,transform:'scale(2.3)'}],{duration:700,easing:'ease-out'});
+  const count=innerWidth<600?9:13,reach=innerWidth<600?100:155;
+  for(let i=0;i<count;i++){
+   const bit=document.createElement('span'),petal=i%3===0;bit.className='cute-bit'+(petal?' petal':'');bit.textContent=petal?'':i%2?'♥':'✦';bit.style.left=x+'px';bit.style.top=y+'px';bit.style.color=i%2?'#f0b2cd':'#cfb8e4';layer.append(bit);
+   const angle=(i/count)*Math.PI*2,dx=Math.cos(angle)*reach*(.7+(i%3)*.15),dy=Math.sin(angle)*reach*.65-28;
+   run(bit,[{opacity:0,transform:'translate(-50%,-50%) scale(.25) rotate(0deg)'},{opacity:.88,offset:.18},{opacity:0,transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px)) scale(.85) rotate(${i%2?75:-65}deg)`}],{duration:680+(i%3)*75,delay:i*18,easing:'cubic-bezier(.16,.68,.3,1)'});
+  }
+  const targets=kind==='ending'?[$('recipientPortrait'),$('endingDecor')]:kind==='unlock'?[]:scene.id==='guide'?[...scene.querySelectorAll('.step')]:scene.id==='mainPage'?[...scene.querySelectorAll('.intro,.audio-panel')]:[];
+  targets.forEach((el,i)=>{if(el.hidden)return;run(el,[{opacity:0,translate:'0 12px',scale:'.93'},{opacity:1,translate:'0 -2px',scale:'1.015',offset:.73},{opacity:1,translate:'0 0',scale:'1'}],{duration:480,delay:i*60,easing:'cubic-bezier(.2,.7,.25,1)'});});
+  Promise.allSettled(effect.animations.map(a=>a.finished)).then(()=>{if(cuteEffects.get(container)===effect){layer.remove();cuteEffects.delete(container);}});
+ }
+ reduced.addEventListener('change',()=>{if(reduced.matches)for(const container of [...cuteEffects.keys()])clearCuteEffects(container);});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)for(const container of [...cuteEffects.keys()])clearCuteEffects(container);});
+
+ async function route(id,focusId){if(routeBusy||id===activePage)return false;routeBusy=true;const host=$('sceneHost'),outgoing=$(activePage),incoming=$(id);const oldHeight=host.getBoundingClientRect().height;outgoing.inert=true;stopFrames();host.style.height=oldHeight+'px';host.classList.add('is-changing');try{await motion(outgoing,[{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(-8px)'}],{duration:150});if(id==='welcome')resetCardEntry();activePage=id;for(const section of ['welcome','guide','mainPage'])$(section).hidden=section!==id;incoming.inert=true;window.scrollTo({top:0,behavior:'instant'});if(id==='mainPage')resize();if(id!=='welcome')cuteEntrance(incoming);const newHeight=sceneHeight(incoming);await Promise.all([motion(host,[{height:oldHeight+'px'},{height:newHeight+'px'}],{duration:300}),motion(incoming,[{opacity:0,transform:'translateY(14px)'},{opacity:1,transform:'translateY(0)'}],{duration:320})]);return true;}finally{host.style.height='';host.classList.remove('is-changing');for(const section of ['welcome','guide','mainPage'])$(section).inert=false;routeBusy=false;if(activePage==='mainPage'){resize();start();}$(focusId||(activePage==='mainPage'?'title':activePage==='guide'?'guideTitle':'welcomeTitle')).focus({preventScroll:true});}}
+
+ function cancelModalMotion(){clearCuteEffects($('celebration'));modalEpoch++;for(const animation of modalMotions)animation.cancel();modalMotions.clear();const host=$('celebrationSceneHost');host.style.height='';host.classList.remove('is-changing');for(const id of ['celebrationIntro','videoLead','videoStage','endingStage','feedbackStage','feedbackThanks'])$(id).inert=false;}
+
+ async function changeModalScene(id,title,onShown,focusId){if(!celebration.open||closingDialogs.has(celebration))return false;cancelModalMotion();const epoch=modalEpoch,host=$('celebrationSceneHost'),ids=['celebrationIntro','videoLead','videoStage','endingStage','feedbackStage','feedbackThanks'],outgoing=ids.map($).find(el=>!el.hidden),incoming=$(id);if(outgoing===incoming){if(onShown)onShown();return true;}const oldHeight=host.getBoundingClientRect().height;host.style.height=oldHeight+'px';host.classList.add('is-changing');if(outgoing){outgoing.inert=true;await motion(outgoing,[{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(-6px)'}],{duration:140},modalMotions);}if(epoch!==modalEpoch||!celebration.open)return false;for(const stage of ids)$(stage).hidden=stage!==id;incoming.inert=true;celebration.setAttribute('aria-labelledby',title);celebration.scrollTop=0;if(onShown)onShown();if(id==='endingStage')cuteEntrance(incoming,'ending');else if(id==='videoLead')cuteEntrance(incoming);const newHeight=sceneHeight(incoming);await Promise.all([motion(host,[{height:oldHeight+'px'},{height:newHeight+'px'}],{duration:280},modalMotions),motion(incoming,[{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'translateY(0)'}],{duration:300},modalMotions)]);if(epoch!==modalEpoch||!celebration.open)return false;host.style.height='';host.classList.remove('is-changing');for(const stage of ids)$(stage).inert=false;if(focusId)$(focusId).focus({preventScroll:true});return true;}
+
+ async function requestDialogClose(dialog){if(!dialog.open||closingDialogs.has(dialog))return;closingDialogs.add(dialog);dialog.classList.add('is-closing');if(dialog===$('letter'))finishLetterReveal();if(dialog===$('celebration')){clearCelebrationTimer();videoAttempt++;greetingVideo.pause();cancelModalMotion();}try{await motion(dialog,[{opacity:1,transform:'translateY(0) scale(1)'},{opacity:0,transform:'translateY(8px) scale(.99)'}],{duration:160});if(dialog.open)dialog.close();}finally{dialog.classList.remove('is-closing');closingDialogs.delete(dialog);}}
+
+
+
+
+
+
+
+
+
+ // Populate with supplied photos only: {name, aliases:[], photo:"data:image/..."}.
+ const recipientProfiles=[{"id":"1IfLLZHuBi47JCZ_Zz5jjD02YQ9a33FtT","name":"Trịnh Hoàng Phương An","aliases":[],"photo":"assets/ae3ddedaf2268127a2fa.jpg","wish":"Phương An ơi, chúc bạn một ngày 20/10 thật ấm áp, có hoa xinh và những lời thương vừa đủ làm tim vui cả ngày. Mong những dự định bạn ấp ủ sẽ dần thành hiện thực, những hôm mệt đều có nơi để nghỉ ngơi. Cứ bước theo nhịp riêng của mình và giữ lại thật nhiều kỷ niệm đẹp cùng Liber nhé!","theme":"scrapbook"},{"id":"1xjmvll86JpWAODf1zwauSkj-LY-1GXDV","name":"Nguyễn Ngọc Hà","aliases":[],"photo":"assets/9cdd0a26558b06456c53.jpg","wish":"Ngọc Hà thân mến, mong ngày 20/10 mang đến cho bạn một bó niềm vui nho nhỏ: một lời hỏi han, món ăn yêu thích và cuộc hẹn cùng những người thương quý. Chúc bạn luôn có sức khỏe, có thời gian chăm sóc bản thân và đủ tự tin để thử điều mới. Hy vọng mỗi lần nhớ về Liber, bạn đều mỉm cười thật tươi!","theme":"scrapbook"},{"id":"1FSBO3P4eVapgKCqrL0SB3FRVoYY5jkbx","name":"Trần Hoàng Nguyên Thảo","aliases":[],"photo":"assets/d20fa223db5b0697deb9.jpg","wish":"Nguyên Thảo ơi, gửi bạn một chiếc ôm bằng lời trong ngày 20/10 này. Chúc những ngày sắp tới có nhiều cuộc gặp dễ thương, nhiều điều đáng mong chờ và những bước tiến khiến bạn tự hào. Nếu có lúc mọi thứ chưa như ý, mong bạn vẫn dịu dàng với chính mình. Liber chúc bạn được yêu quý theo cách thật chân thành!","theme":"rose"},{"id":"1Xb7CE1QOUmWOVh40gA6yOhNqeD-1GFYS","name":"Nguyễn Thục Lam","aliases":[],"photo":"assets/dd56cf640ef0c945485d.png","wish":"Thục Lam ơi, chúc ngày của bạn có màu của trời trong, hương của hoa mới và tiếng cười của những người thân quen. Mong bạn tìm thấy niềm vui trong cả những ngày bình thường, được làm điều mình thích và có bạn đồng hành khi cần. Ngày 20/10, Liber gửi bạn thật nhiều yêu thương cùng lời chúc bình yên dài lâu nhé!","theme":"rose"},{"id":"1hLOKvlrYu8LrHrZmEiba1_Yduto78kNE","name":"Huỳnh Mẫn Tuệ","aliases":[],"photo":"assets/ca4de82b73735c7f7143.jpg","wish":"Mẫn Tuệ thân mến, chúc bạn ngày 20/10 nhận được thật nhiều lời chúc đáng yêu và một bất ngờ khiến bạn vui mãi. Mong những cố gắng của bạn được ghi nhận, những câu hỏi khó dần tìm thấy lời giải và mỗi chặng đường đều có điều hay để khám phá. Nhớ dành cho bản thân một món quà nhỏ và một buổi nghỉ thật thoải mái nhé!","theme":"pastel"},{"id":"1rM_0Al1xiTJJheAKw8wfTeK7_E6-YGTc","name":"Nguyễn Bảo Châu","aliases":[],"photo":"assets/4de151d79a134fa5cd5f.jpg","wish":"Bảo Châu ơi, hôm nay mong bạn được chiều chuộng một chút, được nghe những lời dễ thương và cười nhiều hơn mọi ngày. Chúc bạn có những tình bạn ấm áp, những trải nghiệm mới mẻ và thật nhiều khoảnh khắc muốn cất giữ. Dù đang theo đuổi điều gì, mong bạn luôn thấy hành trình của mình đáng quý. Mừng 20/10 từ Liber nhé!","theme":"pastel"},{"id":"1GBu7BDMbrYh8LfN4ewpbp3-DVKyxiI89","name":"Vương Thể Anh Thư","aliases":[],"photo":"assets/21fe4f1efad7bf8abd40.jpg","wish":"Anh Thư thân mến, chúc bạn một ngày 20/10 như trang sổ được viết bằng toàn những chuyện vui. Mong bạn có đủ thời gian cho người mình quý, cho sở thích riêng và cả những giấc mơ còn đang phác thảo. Chúc những ngày bận rộn vẫn có phút thảnh thơi, những ngày bình thường cũng có điều ngọt ngào. Liber gửi thương mến đến bạn!","theme":"rose"},{"id":"1l6U_T7QEsAnE5TrUF4bSTv1cmZsUCnHV","name":"Phan Thị Minh Hằng","aliases":[],"photo":"assets/7b32157b576bdc71d4df.jpg","wish":"Minh Hằng ơi, chúc bạn ngày 20/10 có một buổi sáng nhẹ lòng và một buổi tối đầy tiếng cười. Mong mỗi nỗ lực nhỏ đều đưa bạn gần hơn với điều mình mong muốn, mỗi lần vấp váp đều có người động viên. Hãy dành chỗ cho những niềm vui bất chợt và những chuyến đi đáng nhớ. Liber mong bạn luôn được quan tâm thật nhiều!","theme":"rose"},{"id":"1OHqAuXdaCUw1GhwWsPdW5zGEpr1WtOJk","name":"Phạm Nguyễn Quế Trâm","aliases":[],"photo":"assets/9641749d6083a879a11e.png","wish":"Quế Trâm ơi, gửi bạn chút ngọt ngào của ngày 20/10 cùng lời chúc mọi dự định sắp tới đều có một khởi đầu thuận lợi. Mong bạn có những cuộc trò chuyện thật vui, những ngày học tập vừa sức và những buổi nghỉ ngơi trọn vẹn. Chúc bạn luôn thoải mái là chính mình, được lắng nghe và có nhiều kỷ niệm thân thương với Liber nhé!","theme":"rose"},{"id":"146bUrqJtklvpl6NPEdpNXBFDkQYqpTCQ","name":"Nguyễn Ngọc Thảo Vân","aliases":[],"photo":"assets/3585a3d2a6ecb78703a6.jpg","wish":"Thảo Vân thân mến, mong ngày 20/10 ghé qua thật dịu dàng với hoa, quà nhỏ và những lời chúc làm bạn ấm lòng. Chúc bạn có đủ can đảm để bắt đầu điều mình muốn, đủ kiên nhẫn để đi tiếp và đủ thảnh thơi để tận hưởng từng bước. Những lúc cần sẻ chia, mong luôn có người sẵn lòng ngồi cạnh và nghe bạn kể chuyện nhé!","theme":"scrapbook"},{"id":"1CT27helydyEm9nRSDe1VRMOiA9Tz87Dl","name":"Diêu Chiêu Nghi","aliases":[],"photo":"assets/bb4c65da6819cda04cd9.jpg","wish":"Chiêu Nghi ơi, chúc bạn một ngày 20/10 đầy những điều xinh xắn, từ tấm ảnh vừa ý đến một lời nhắn khiến bạn bật cười. Mong bạn gặp nhiều người tử tế, khám phá được điều mình yêu thích và có thật nhiều lý do để háo hức với ngày mai. Liber gửi bạn lời chúc vui khỏe, học tập thuận lợi và luôn có khoảng trời riêng thật dễ chịu!","theme":"rose"},{"id":"1S4Ld7F-1SBToQ_wK3UOSgPYzuLl4gXre","name":"Phạm Thị Phương Uyên","aliases":[],"photo":"assets/03e070f37c3e053e7852.jpg","wish":"Phương Uyên thân mến, hôm nay chúc bạn được bao quanh bởi những lời quan tâm và tiếng cười thật giòn. Mong các kế hoạch nhỏ dần ghép thành một hành trình đáng nhớ, có cả thành quả lẫn những phút vui chơi hết mình. Khi cần nghỉ, hãy cho mình một khoảng lặng dễ chịu. Mừng 20/10, Liber chúc bạn đón thêm nhiều điều tốt lành nhé!","theme":"pastel"},{"id":"1deqyEHvQqui2z1EN4_eYKXG4NT6jiIRz","name":"Huỳnh Lê Gia Hân","aliases":[],"photo":"assets/fab68d83e23acbff0a1b.png","wish":"Gia Hân ơi, chúc bạn ngày 20/10 có thật nhiều niềm vui để kể và những khoảnh khắc đẹp để lưu vào album. Mong bạn luôn có người cùng cười trước những chuyện nhỏ, cùng sẻ chia khi một ngày hơi khó. Chúc những điều bạn đang chờ đợi sẽ đến vào lúc thật đẹp, và hành trình cùng Liber sẽ có thêm nhiều kỷ niệm ấm áp nhé!","theme":"rose"},{"id":"1iw4Y0D2TBrWs6wmvpgfTsOVfqIdT6loT","name":"Bùi Phương Linh","aliases":[],"photo":"assets/b4b6968047a9e6239d2a.jpg","wish":"Phương Linh thân mến, gửi bạn một bó hoa bằng lời với lời chúc ngày 20/10 thật rộn ràng. Mong bạn tìm được cảm hứng trong những điều mới, giữ được niềm vui với những điều quen và luôn có thời gian cho bản thân. Chúc mỗi quyết định đều đưa bạn đến gần cuộc sống mình mong muốn, cùng những người khiến bạn thấy thoải mái và được yêu quý!","theme":"rose"},{"id":"1tigS2bHoDyFI6LCt8TNzm6WllozyPPhk","name":"Lê Hải Yến","aliases":[],"photo":"assets/d4905dfd2e99975a020b.jpg","wish":"Hải Yến ơi, chúc ngày 20/10 mở ra cho bạn thật nhiều chuyện vui và những lời thương bất ngờ. Mong những chuyến đi sắp tới đều có cảnh đẹp, bạn tốt và những tấm hình muốn xem lại mãi. Dù bận rộn đến đâu, chúc bạn vẫn có một góc nhỏ để nghỉ ngơi và nuôi dưỡng ước mơ. Liber gửi đến bạn thật nhiều nắng ấm và bình yên nhé!","theme":"scrapbook"},{"id":"1xcKmrccjIo_UY_ziXLCjQ6JidSAlQ2RG","name":"Trần Quỳnh Anh","aliases":[],"photo":"assets/a98e53ee884ff00d333c.jpg","wish":"Quỳnh Anh thân mến, chúc bạn một ngày 20/10 được làm những điều khiến mình thấy vui, ăn món mình thích và gặp người mình quý. Mong bạn có nhiều cơ hội để khám phá khả năng của bản thân, tự hào về từng bước tiến dù nhỏ. Khi nhìn lại những ngày ở Liber, hy vọng bạn sẽ thấy cả một album tiếng cười và những tình bạn đáng giữ!","theme":"scrapbook"},{"id":"1nLaTtFhRLhOMsR4BQYKPkmSyt6UADepz","name":"Nguyễn Trần Phương Mai","aliases":[],"photo":"assets/7025b82c2d07038a0d7b.png","wish":"Phương Mai ơi, mong ngày 20/10 của bạn bắt đầu bằng tin vui và khép lại bằng cảm giác được yêu thương. Chúc những ý tưởng còn nằm trong sổ sẽ có dịp thành hiện thực, những ngày bận sẽ có người cùng san sẻ. Mong bạn luôn có điều để mong chờ, một nơi để thấy an tâm và thật nhiều dịp vui cùng đại gia đình Liber nhé!","theme":"rose"},{"id":"1Mw0QgFJU_2YdXluBB29J8VlJJLzGqsT2","name":"Nguyễn Ngọc Hà Dương","aliases":[],"photo":"assets/d725b3f32ad0a3903ca9.jpg","wish":"Hà Dương thân mến, chúc bạn một ngày 20/10 ngập tiếng cười và những bất ngờ dễ thương. Mong mỗi sáng thức dậy đều có một điều nhỏ khiến bạn hào hứng, mỗi tối đều có chuyện vui để nhớ. Chúc bạn học tập thuận lợi, tìm được nhịp sống vừa ý và có đủ thời gian tận hưởng những người, những điều mình yêu quý. Liber gửi bạn một cái ôm thật ấm!","theme":"rose"},{"id":"1qZRpXjFaclvBB-4gp2NH_HSZ7OgqsXZE","name":"Mai Đào Khánh Trang","aliases":[],"photo":"assets/807d426c08332f92874f.jpg","wish":"Khánh Trang ơi, ngày 20/10 này chúc bạn có một chiếc túi đầy niềm vui: lời nhắn dễ thương, món quà bất ngờ và những cuộc hẹn thật vui. Mong bạn luôn được tôn trọng lựa chọn của mình, có cơ hội thử sức và có người cổ vũ trên đường đi. Chúc những tháng ngày cùng Liber trở thành những trang kỷ niệm mà bạn muốn đọc lại mãi nhé!","theme":"scrapbook"},{"id":"1wx6JSfTST71hk3hK5x-_KBcVpcmzbLnl","name":"Thân Thị Kim Giao","aliases":[],"photo":"assets/b89840f9999bff74177b.jpg","wish":"Kim Giao thân mến, gửi bạn lời chúc 20/10 thật êm dịu như một buổi chiều được nghỉ ngơi bên người mình quý. Mong bạn có nhiều sức khỏe để theo đuổi dự định, nhiều niềm vui để tiếp thêm năng lượng và những tình bạn đủ gần để sẻ chia. Chúc bạn luôn tìm thấy điều đáng yêu trong cuộc sống, kể cả từ những chuyện bé xíu mỗi ngày!","theme":"pastel"},{"id":"1h_6s_ZrzThlob7t6cLN7B7QDjAp1wGaj","name":"Nguyễn Trần Khánh Linh","aliases":[],"photo":"assets/c1139dbd188300ad868a.jpg","wish":"Khánh Linh ơi, chúc bạn ngày 20/10 có nhiều khoảnh khắc vui đến mức muốn bấm nút lưu lại. Mong những cố gắng âm thầm sớm mang về kết quả khiến bạn tự hào, những trải nghiệm mới giúp bạn hiểu mình hơn. Chúc bạn có một hành trình thật phong phú, được thử, được học và được nghỉ khi cần. Liber luôn mong những điều dịu dàng sẽ đến với bạn!","theme":"scrapbook"},{"id":"1Rex9tMX5X46Tjyz9CGybI19g6RDU3pTf","name":"Phạm Vân Anh","aliases":[],"photo":"assets/bfb6de07892a9a9548e8.jpg","wish":"Vân Anh thân mến, hôm nay gửi bạn lời chúc thật nhiều sức khỏe, nhiều tiếng cười và một ngày 20/10 đầy hoa xinh. Mong bạn có những người bạn biết lắng nghe, những công việc mang lại hứng thú và những buổi tối thật thư thái. Chúc bạn đủ tự tin để nói điều mình nghĩ, chọn điều mình thích và tận hưởng những kỷ niệm đáng yêu cùng Liber nhé!","theme":"pastel"},{"id":"1IXJ2qJ8ZACHhcwFWNbbGrA8pCTI2ge8_","name":"Đỗ Minh Anh","aliases":[],"photo":"assets/50081f676c406353f53f.jpg","wish":"Minh Anh ơi, chúc bạn ngày 20/10 sáng bừng với những tin nhắn dễ thương và những cuộc gặp đầy tiếng cười. Mong bạn luôn giữ được sự háo hức khi bắt đầu điều mới, có người chia vui khi thành công và động viên lúc cần. Chúc từng dự định bạn chăm chút sẽ dần đơm hoa, còn mỗi ngày đều dành lại một chút ngọt ngào cho riêng bạn nhé!","theme":"scrapbook"},{"id":"1glv2u2L-XODWXwsMnUBu2ZwANYIXRVbv","name":"Trương Hoàng Anh Như","aliases":[],"photo":"assets/7827c69f52f8e2d0d50c.jpg","wish":"Anh Như thân mến, mong ngày 20/10 dành tặng bạn những món quà nhỏ nhưng niềm vui thật lâu. Chúc bạn có nhiều cơ hội làm điều mình yêu, nhiều chuyến đi để mở rộng thế giới và những người bạn để cùng kể chuyện. Dù hôm nay bận rộn hay thảnh thơi, mong bạn vẫn dành được một khoảnh khắc yêu chiều bản thân. Liber gửi bạn thật nhiều thương mến!","theme":"rose"},{"id":"1qOqxGswY4cz-1ElqAteuMrcToKWQUE_f","name":"Trần Nguyên Hồng Ân","aliases":[],"photo":"assets/ccaeaaceb05a8ed41900.jpg","wish":"Hồng Ân ơi, chúc bạn ngày 20/10 được đón nhận thật nhiều tình cảm chân thành và những điều bất ngờ ngọt ngào. Mong bạn có những ngày học tập hiệu quả, những giờ vui chơi trọn vẹn và giấc ngủ thật ngon sau mỗi ngày dài. Chúc mọi cố gắng đều có ý nghĩa với bạn, mọi hành trình đều có bạn đồng hành và nhiều kỷ niệm đẹp để giữ lại nhé!","theme":"rose"},{"id":"10FlvogWOd4qIJxM9wxkNaHNLVJ3ODDRo","name":"Phạm Thu Nam","aliases":[],"photo":"assets/b4e015530b106deb3fc2.jpg","wish":"Thu Nam thân mến, gửi bạn chút ấm áp trong ngày 20/10 cùng lời chúc luôn khỏe mạnh và vui với những lựa chọn của mình. Mong bạn có những buổi hẹn không cần vội, những câu chuyện có người lắng nghe và những ước mơ có dịp lớn lên. Chúc chặng đường phía trước thật nhiều điều đáng khám phá, cùng những tình bạn ở Liber ngày càng thân thiết nhé!","theme":"rose"}];
+ const cardThemes={
+  scrapbook:{name:'Tím scrapbook',bg1:'#33203c',bg2:'#201428',ink:'#fff2ec',muted:'#c8b3ca',accent:'#f5b1ce',note:'#f5e2e9',noteInk:'#75435d',back:'#bca4c9',frame:'#fae9ed',photo:'#e4cbd8',tape:'#bfa6d6',button:'#f7a6c4',buttonInk:'#31162c'},
+  pastel:{name:'Hồng pastel',bg1:'#fff1f5',bg2:'#f3ccdc',ink:'#603b50',muted:'#795469',accent:'#94496e',note:'#fff9fb',noteInk:'#70445d',back:'#e8afc6',frame:'#fffafb',photo:'#f6dce7',tape:'#e7a8c5',button:'#92436a',buttonInk:'#fff9fc'},
+  rose:{name:'Kem hoa hồng',bg1:'#fff9ec',bg2:'#eadcbd',ink:'#584537',muted:'#73604c',accent:'#984e59',note:'#fffdf4',noteInk:'#66503e',back:'#bac3a4',frame:'#fffdf3',photo:'#eae2cd',tape:'#a8b58f',button:'#865146',buttonInk:'#fffaf1'}
+ };
+ let activeCardTheme='scrapbook';
+ function cardPalette(){return cardThemes[activeCardTheme]||cardThemes.scrapbook;}
+ function applyCardTheme(){const dialog=$('celebration');dialog.dataset.cardTheme=activeCardTheme;for(const [key,value]of Object.entries(cardPalette()))if(key!=='name')dialog.style.setProperty('--card-'+key,value);document.querySelectorAll('input[name="cardTheme"]').forEach(input=>{input.checked=input.value===activeCardTheme;});$('cardFallback').hidden=true;$('cardStatus').textContent='';}
+ function restoreCardTheme(profile){let saved;try{if(profile)saved=localStorage.getItem('liber-card-theme:'+profile.id);}catch{}activeCardTheme=Object.hasOwn(cardThemes,saved)?saved:Object.hasOwn(cardThemes,profile?.theme)?profile.theme:'scrapbook';applyCardTheme();}
+ document.querySelectorAll('input[name="cardTheme"]').forEach(input=>input.addEventListener('change',()=>{if(!input.checked)return;activeCardTheme=input.value;applyCardTheme();try{if(activeRecipient)localStorage.setItem('liber-card-theme:'+activeRecipient.id,activeCardTheme);}catch{}drawEndingDecor();}));
+
+ let activeRecipient=null,activeRecipientImage=null,photoVersion=0,photoReady=Promise.resolve();
+
+
+ let selectedRecipientId=null;
+ function profileKey(value){return String(value).normalize('NFC').trim().toLocaleLowerCase('vi-VN').replace(/\s+/gu,' ');}
+ function looseProfileKey(value){return profileKey(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replaceAll('đ','d');}
+ function findRecipient(value){
+   const input=profileKey(value),loose=looseProfileKey(value),hasAccent=input!==loose;
+   const result=(found,confirm=false)=>found.length===1&&!confirm?{profile:found[0],error:'',candidates:[]}:{profile:null,error:found.length>1?'Có vài tên gần giống nhau. Bạn chọn ảnh và họ tên của mình nhé ♡':found.length?'Bạn xác nhận đúng ảnh và họ tên của mình nhé ♡':'Chưa tìm thấy tên này. Thử tên thật hoặc thêm chữ đệm nhé.',candidates:found};
+   if(!input)return{profile:null,error:'Bạn để lại tên trước nha ♡',candidates:[]};
+   const keys=p=>[p.name,...(p.aliases||[])];
+   // Full names take precedence; identical full names still require a photo choice.
+   let found=recipientProfiles.filter(p=>keys(p).some(k=>looseProfileKey(k)===loose));
+   if(hasAccent){const exact=found.filter(p=>keys(p).some(k=>profileKey(k)===input));if(exact.length)found=exact;}
+   if(found.length)return result(found);
+   // Match whole tokens in order, including middle names, to expose all plausible people.
+   const contains=(name,query)=>{const parts=name.split(' ');let from=0;return query.split(' ').every(token=>{const i=parts.indexOf(token,from);if(i<0)return false;from=i+1;return true;});};
+   found=recipientProfiles.filter(p=>keys(p).some(k=>contains(looseProfileKey(k),loose)));
+   if(hasAccent){const precise=found.filter(p=>keys(p).some(k=>contains(profileKey(k),input)));if(precise.length)found=precise;}
+   found.sort((a,b)=>a.name.localeCompare(b.name,'vi'));
+   const suffix=p=>keys(p).some(k=>looseProfileKey(k).endsWith(' '+loose));
+   return result(found,found.length===1&&!suffix(found[0]));
+ }
+ function showRecipientChoices(profiles=[]){
+   const box=$('recipientChoices');box.replaceChildren();box.hidden=!profiles.length;
+   profiles.forEach((profile,index)=>{const button=document.createElement('button');button.type='button';button.className='recipient-choice';button.dataset.recipientId=profile.id;
+     const img=document.createElement('img');img.src=profile.photo;img.alt='';img.decoding='async';img.width=52;img.height=58;
+     const label=document.createElement('span');label.textContent=profile.name;
+     if(profiles.filter(p=>profileKey(p.name)===profileKey(profile.name)).length>1){const hint=document.createElement('small');hint.textContent='Chọn theo ảnh '+(index+1);label.append(hint);}
+     button.append(img,label);button.addEventListener('click',()=>{selectedRecipientId=profile.id;$('nickname').value=profile.name;showRecipientChoices();$('loginForm').requestSubmit();});box.append(button);
+   });
+ }
+ function renderRecipientPortrait(){const portrait=$('recipientPortrait'),hasPhoto=!!activeRecipientImage;portrait.hidden=!hasPhoto;$('bouquet').hidden=hasPhoto;$('endingStage').classList.toggle('has-portrait',hasPhoto);if(hasPhoto){portrait.src=activeRecipientImage.src;portrait.alt='Ảnh của '+(activeRecipient?.name||nickname);}else{portrait.removeAttribute('src');portrait.alt='';}const failed=!!activeRecipient&&!activeRecipientImage;$('photoStatus').hidden=!failed;$('photoStatus').textContent=failed?'Ảnh chưa mở được. Lời chúc của bạn vẫn ở đây nhé.':'';}
+ function prepareRecipientPhoto(profile){const version=++photoVersion;activeRecipient=profile;restoreCardTheme(profile);activeRecipientImage=null;renderRecipientPortrait();if(!profile){photoReady=Promise.resolve();return;}photoReady=new Promise(resolve=>{const img=new Image();let done=false;const finish=success=>{if(done)return;done=true;clearTimeout(timeout);if(version===photoVersion){activeRecipientImage=success?img:null;renderRecipientPortrait();}resolve();};const timeout=setTimeout(()=>finish(false),10000);img.decoding='async';img.onload=()=>finish(img.naturalWidth>0);img.onerror=()=>finish(false);img.src=profile.photo;});}
+ function drawRecipientPhoto(g,img){g.save();g.translate(600,505);g.rotate(-.025);g.fillStyle='#f8e7ec';g.shadowColor='#0004';g.shadowBlur=20;g.shadowOffsetY=9;g.fillRect(-240,-288,480,574);g.shadowBlur=0;g.shadowOffsetY=0;const width=440,height=490,ratio=Math.min(width/img.naturalWidth,height/img.naturalHeight),iw=img.naturalWidth*ratio,ih=img.naturalHeight*ratio;g.fillStyle='#ead1dd';g.fillRect(-220,-268,width,height);g.drawImage(img,-iw/2,-268+(height-ih)/2,iw,ih);g.restore();blossom(g,365,726,37,'#efabc5',.25);blossom(g,837,310,30,'#bda2d4',.6);leaf(g,391,761,-.4,23);}
+
+ let unlocking=false,unlockTimer=null;
+
+
+ function resetCardEntry(){clearTimeout(unlockTimer);unlockTimer=null;unlocking=false;$('lockedCard').classList.remove('is-unlocking');$('cardInside').setAttribute('aria-hidden','true');$('cardCover').removeAttribute('aria-hidden');$('cardCover').inert=false;$('nickname').disabled=false;$('unlockCard').disabled=false;$('unlockStatus').textContent='';}
+
+
+ function openCardEntry(){cuteEntrance($('welcome'),'unlock');unlocking=true;$('unlockName').textContent=nickname;$('unlockStatus').textContent='Đã mở khóa tấm thiệp dành cho '+nickname+' ♡';$('nickname').disabled=true;$('unlockCard').disabled=true;$('unlockCard').blur();$('cardCover').inert=true;$('cardCover').setAttribute('aria-hidden','true');$('cardInside').setAttribute('aria-hidden','false');$('lockedCard').classList.add('is-unlocking');unlockTimer=setTimeout(()=>{route('guide');},reduced.matches?150:1100);}
+
+
+
+
+
+ $('loginForm').addEventListener('submit',e=>{e.preventDefault();if(unlocking)return;const name=$('nickname').value.trim().replace(/\s+/g,' ');if(!name){$('nameError').textContent='Bạn để lại một tên nhỏ xinh trước nha ♡';$('nickname').setAttribute('aria-invalid','true');$('nickname').focus();return;}const chosen=recipientProfiles.find(p=>p.id===selectedRecipientId&&profileKey(p.name)===profileKey(name));selectedRecipientId=null;const match=chosen?{profile:chosen,error:'',candidates:[]}:findRecipient(name);showRecipientChoices(match.candidates);if(match.error){$('nameError').textContent=match.error;$('nickname').setAttribute('aria-invalid','true');$('nickname').focus();return;}prepareRecipientPhoto(match.profile);nickname=match.profile?match.profile.name:Array.from(name).slice(0,40).join('');$('nickname').value=nickname;$('nickname').removeAttribute('aria-invalid');$('nameError').textContent='';for(const id of ['guideName','displayName','letterName','completeName','endingName'])$(id).textContent=nickname;completionShown=false;angle=0;setProgress(0);openCardEntry();});
+
+
+
+ $('nickname').addEventListener('input',()=>{selectedRecipientId=null;showRecipientChoices();$('nickname').removeAttribute('aria-invalid');$('nameError').textContent='';});
+
+
+
+ $('enterMain').onclick=()=>{if(routeBusy)return;route('mainPage');if(!playing)play();};
+
+
+
+ function changeName(){if(routeBusy)return;selectedRecipientId=null;showRecipientChoices();prepareRecipientPhoto(null);completionShown=false;stop();updateAudio('Đã tắt nhạc');route('welcome','nickname');}
+
+
+
+ $('backWelcome').onclick=changeName;$('changeName').onclick=changeName;
+
+
+
+ const letter=$('letter');let letterAnimations=[];
+ function finishLetterReveal(){const pending=letterAnimations;letterAnimations=[];for(const a of pending)a.cancel();}
+ function revealLetter(){
+  finishLetterReveal();if(reduced.matches||document.hidden)return;
+  const animations=[];const run=(el,frames,options)=>{if(el?.animate)animations.push(el.animate(frames,{fill:'both',easing:'cubic-bezier(.22,.65,.3,1)',...options}));};
+  run(letter.querySelector('.letter-date'),[{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:650});
+  run(letter.querySelector('.letter-flower'),[{opacity:0,scale:'.65',rotate:'-8deg'},{opacity:1,scale:'1',rotate:'0deg'}],{duration:1100,delay:120});
+  run($('letterTitle'),[{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'translateY(0)'}],{duration:950,delay:180});
+  let count=0;
+  for(const paragraph of letter.querySelectorAll('p:not(.signature):not(.small)')){
+   if(!paragraph.querySelector('.letter-word')){const words=paragraph.textContent.split(/(\s+)/);paragraph.replaceChildren(...words.map(word=>{if(/^\s+$/.test(word))return document.createTextNode(word);const span=document.createElement('span');span.className='letter-word';span.textContent=word;return span;}));}
+   for(const word of paragraph.querySelectorAll('.letter-word')){run(word,[{opacity:0,transform:'translateY(9px) rotate(-1deg)'},{opacity:1,transform:'translateY(0) rotate(0deg)'}],{duration:620,delay:600+count*16});count++;}
+  }
+  for(const [i,el]of [letter.querySelector('.signature'),letter.querySelector('.small'),letter.querySelector('.liber-autograph'),letter.querySelector('.letter-petals')].entries())run(el,[{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,delay:600+count*16+i*140});
+  letterAnimations=animations;Promise.allSettled(animations.map(a=>a.finished)).then(()=>{if(letterAnimations===animations)finishLetterReveal();});
+ }
+ $('openLetter').onclick=()=>{if(letter.open||closingDialogs.has(letter))return;letter.showModal();letter.scrollTop=0;revealLetter();};
+ letter.addEventListener('close',finishLetterReveal);
+ reduced.addEventListener('change',()=>{if(reduced.matches)finishLetterReveal();});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)finishLetterReveal();});$('closeLetter').onclick=()=>requestDialogClose(letter);letter.addEventListener('cancel',e=>{e.preventDefault();requestDialogClose(letter);});letter.addEventListener('click',e=>{if(e.target===letter){const r=letter.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)requestDialogClose(letter);}});
+
+
+
+
+
+
+
+ // Audio starts only after a user gesture. User files are kept as local blob URLs.
+
+
+
+ let audioCtx=null, master=null,timer=null,nextNote=0,noteIndex=0,playing=false,source='synth',fileURL=null,operation=0;
+
+
+
+ const audio=new Audio();audio.loop=true;audio.preload='metadata';audio.volume=.4;
+
+
+
+ const melody=[72,76,79,83,79,76,74,79,81,84,81,79,71,74,78,81,78,74,69,72,76,79,76,72,67,71,74,79,74,71,69,74];
+
+
+
+ const chords=[[48,55,60,64],[53,60,65,69],[55,62,67,71],[48,55,60,64]];
+
+
+
+ function tone(note,at,duration,level){const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=440*2**((note-69)/12);gain.gain.setValueAtTime(0,at);gain.gain.linearRampToValueAtTime(level,at+.035);gain.gain.exponentialRampToValueAtTime(.0001,at+duration);osc.connect(gain);gain.connect(master);osc.start(at);osc.stop(at+duration+.05);osc.onended=()=>{osc.disconnect();gain.disconnect();};}
+
+
+
+ function schedule(){if(!playing||source!=='synth')return;while(nextNote<audioCtx.currentTime+.25){if(nextNote<audioCtx.currentTime-.5)nextNote=audioCtx.currentTime+.05;tone(melody[noteIndex%melody.length],nextNote,2.3,.18);if(noteIndex%8===0)for(const n of chords[Math.floor(noteIndex/8)%4])tone(n,nextNote,5.1,.055);noteIndex++;nextNote+=.52;}}
+
+
+
+ function updateAudio(message){$('play').textContent=playing?'Ⅱ':'▷';$('play').setAttribute('aria-pressed',String(playing));$('play').setAttribute('aria-label',playing?'Tắt nhạc nền':'Bật nhạc nền');$('audioStatus').textContent=message;}
+
+
+
+ function stop(){operation++;playing=false;clearInterval(timer);timer=null;audio.pause();if(audioCtx&&audioCtx.state==='running')audioCtx.suspend().catch(()=>{});}
+
+
+
+ async function play(){const token=++operation;$('play').disabled=true;try{if(source==='file'){await audio.play();}else{if(!audioCtx){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)throw Error('unsupported');audioCtx=new AC();master=audioCtx.createGain();master.gain.value=Number($('volume').value)/100*.65;master.connect(audioCtx.destination);nextNote=audioCtx.currentTime+.08;}await audioCtx.resume();}
+
+
+
+   if(token!==operation){if(source==='file')audio.pause();return;}playing=true;if(source==='synth'){nextNote=Math.max(nextNote,audioCtx.currentTime+.06);schedule();timer=setInterval(schedule,120);}updateAudio('Đang phát');
+
+
+
+  }catch(e){if(token===operation){stop();updateAudio(source==='file'?'Không phát được file này. Hãy thử file MP3 hoặc WAV khác.':'Nhấn nút phát để bật nhạc.');}}
+
+
+
+  finally{$('play').disabled=false;}}
+
+
+
+ $('play').onclick=()=>{if(playing){stop();updateAudio('Đã tắt nhạc');}else play();};
+
+
+
+ $('volume').oninput=()=>{const v=Number($('volume').value)/100;audio.volume=v;if(master)master.gain.setTargetAtTime(v*.65,audioCtx.currentTime,.05);};
+
+
+
+ $('musicFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;if(!(file.type.startsWith('audio/')||/\.(mp3|wav|ogg|m4a|aac|flac)$/i.test(file.name))){$('audioStatus').textContent='Hãy chọn file âm thanh, ví dụ MP3 hoặc WAV.';e.target.value='';return;}stop();audio.removeAttribute('src');audio.load();if(fileURL)URL.revokeObjectURL(fileURL);fileURL=URL.createObjectURL(file);audio.src=fileURL;source='file';$('trackName').textContent=file.name;$('resetMusic').hidden=false;updateAudio('Đã chọn nhạc · Nhấn phát để nghe.');};
+
+
+
+ $('resetMusic').onclick=()=>{stop();source='synth';audio.removeAttribute('src');audio.load();if(fileURL)URL.revokeObjectURL(fileURL);fileURL=null;$('musicFile').value='';$('trackName').textContent='Giai điệu dành cho Liber';$('resetMusic').hidden=true;updateAudio('Đã chọn giai điệu mặc định · Nhấn phát để nghe.');};
+
+
+
+ audio.addEventListener('error',()=>{if(source==='file'&&audio.getAttribute('src')){stop();updateAudio('Không đọc được nhạc. Hãy chọn file MP3 hoặc WAV khác.');}});
+
+
+
+
+
+
+
+ // A real greeting video can be embedded here when supplied by the organizer.
+
+
+
+ // User-selected video remains local to the device and is never uploaded.
+
+
+
+ const bundledGreetingVideo='assets/b32b52dbdeef47d0a17b.mp4';
+
+
+
+ const celebration=$('celebration'),greetingVideo=$('greetingVideo');
+
+
+
+ let greetingURL='',videoTimer=null,resumeMusic=false,videoAttempt=0;
+
+
+
+ function clearCelebrationTimer(){clearTimeout(videoTimer);videoTimer=null;}
+
+
+
+ function makeConfetti(){const container=$('confetti');container.replaceChildren();if(reduced.matches)return;for(let i=0;i<52;i++){const piece=document.createElement('i');piece.style.setProperty('--left',Math.random()*100+'%');piece.style.setProperty('--delay',Math.random()*.65+'s');piece.style.setProperty('--drift',(Math.random()-.5)*140+'px');piece.style.setProperty('--spin',(Math.random()-.5)*900+'deg');piece.style.background=['#f7a6c4','#e7c6a1','#fff2ec','#bc81cb'][i%4];container.append(piece);}}
+
+
+
+ function configureVideo(){const hasVideo=!!greetingVideo.getAttribute('src');greetingVideo.hidden=!hasVideo;$('videoEmpty').hidden=hasVideo;$('replaceGreeting').hidden=!hasVideo||!!bundledGreetingVideo;$('videoSetup').textContent=hasVideo?'Xem video':'Thêm video';}
+
+
+
+ async function playGreeting(){if(!celebration.open||!greetingVideo.getAttribute('src'))return;const attempt=++videoAttempt;$('videoStatus').textContent='';$('startGreeting').hidden=true;try{await greetingVideo.play();if(attempt!==videoAttempt||!celebration.open)greetingVideo.pause();}catch(e){if(attempt!==videoAttempt||!celebration.open)return;$('startGreeting').hidden=false;$('videoStatus').textContent=e.name==='NotAllowedError'?'Nhấn “Phát video” để xem lời chúc.':'Không phát được video. Hãy thử file MP4 khác.';}}
+
+
+
+ function showVideo(){clearCelebrationTimer();return changeModalScene('videoStage','videoTitle',()=>{$('confetti').replaceChildren();configureVideo();if(greetingVideo.getAttribute('src')){if(greetingVideo.ended)greetingVideo.currentTime=0;playGreeting();}});}
+
+
+
+ function openVideoDialog(){if(celebration.open)return;cancelModalMotion();resumeMusic=playing;stop();updateAudio('Nhạc tạm dừng để xem video');stopFrames();$('videoStatus').textContent='';$('startGreeting').hidden=true;celebration.showModal();}
+
+
+
+ function showCelebration(){if(celebration.open)return;cancelModalMotion();clearCelebrationTimer();$('celebrationIntro').hidden=false;$('feedbackStage').hidden=true;$('feedbackThanks').hidden=true;$('videoLead').hidden=true;$('endingStage').hidden=true;$('videoStage').hidden=true;celebration.setAttribute('aria-labelledby','celebrationTitle');openVideoDialog();makeConfetti();if(greetingVideo.getAttribute('src'))greetingVideo.currentTime=0;videoTimer=setTimeout(showVideoLead,2400);}
+
+
+
+ $('closeCelebration').onclick=()=>requestDialogClose(celebration);celebration.addEventListener('cancel',e=>{e.preventDefault();requestDialogClose(celebration);});
+
+
+
+ celebration.addEventListener('close',()=>{cancelModalMotion();clearCelebrationTimer();videoAttempt++;greetingVideo.pause();$('confetti').replaceChildren();start();if(resumeMusic){resumeMusic=false;play();}else updateAudio('Đã tắt nhạc');});
+
+
+
+ $('videoSetup').onclick=()=>{if(greetingVideo.getAttribute('src')){openVideoDialog();showVideo();}else $('greetingFile').click();};
+
+
+
+ $('chooseGreeting').onclick=()=>$('greetingFile').click();$('replaceGreeting').onclick=()=>$('greetingFile').click();
+
+
+
+ $('startGreeting').onclick=()=>{if(greetingVideo.ended)greetingVideo.currentTime=0;playGreeting();};
+
+
+
+ $('greetingFile').onchange=e=>{const file=e.target.files[0];if(!file)return;if(!(file.type.startsWith('video/')||/\.(mp4|webm|mov)$/i.test(file.name))){if(!celebration.open){openVideoDialog();showVideo();}$('videoStatus').textContent='Hãy chọn một file video MP4, WebM hoặc MOV.';e.target.value='';return;}videoAttempt++;greetingVideo.pause();greetingVideo.removeAttribute('src');greetingVideo.load();if(greetingURL)URL.revokeObjectURL(greetingURL);greetingURL=URL.createObjectURL(file);greetingVideo.src=greetingURL;greetingVideo.load();configureVideo();$('videoStatus').textContent='';if(celebration.open&&!$('videoStage').hidden)playGreeting();e.target.value='';};
+
+
+
+ greetingVideo.addEventListener('play',()=>{if(!celebration.open){greetingVideo.pause();return;}$('startGreeting').hidden=true;$('videoStatus').textContent='';});
+
+
+
+ greetingVideo.addEventListener('ended',showEnding);
+
+
+
+ greetingVideo.addEventListener('error',()=>{if(!greetingVideo.getAttribute('src'))return;if(!celebration.open){openVideoDialog();showVideo();}$('videoStatus').textContent='Không đọc được video. Hãy chọn file MP4 khác.';$('startGreeting').hidden=true;});
+
+
+
+
+
+
+
+ function blossom(g,x,y,size,color,rotation=0){g.save();g.translate(x,y);g.rotate(rotation);g.fillStyle=color;for(let i=0;i<5;i++){g.save();g.rotate(i*Math.PI*2/5);g.beginPath();g.ellipse(0,-size*.5,size*.37,size*.56,0,0,Math.PI*2);g.fill();g.restore();}g.fillStyle='#ebc58e';g.beginPath();g.arc(0,0,size*.25,0,Math.PI*2);g.fill();g.restore();}
+
+
+
+ function leaf(g,x,y,rotation,size){g.save();g.translate(x,y);g.rotate(rotation);g.fillStyle='#8fae9c';g.beginPath();g.ellipse(0,0,size,size*.4,0,0,Math.PI*2);g.fill();g.restore();}
+
+
+
+ function drawGrowingFlowers(){const locations=[[.22,.16],[.82,.25],[.12,.43],[.87,.55],[.19,.74],[.77,.8],[.43,.1],[.58,.88]];const colors=['#efabc5','#bda2d4','#f1d3ac'];let visible=0;for(let i=0;i<locations.length;i++){const growth=Math.max(0,Math.min(1,(progress-8-i*10)/15));if(growth<=0)continue;visible++;const [fx,fy]=locations[i],x=w*fx,y=h*fy,size=Math.min(w,h)*.037*growth;ctx.globalAlpha=growth;leaf(ctx,x+size*.55,y+size*1.2,-.5,size*.55);blossom(ctx,x,y,size,colors[i%3],(paused?0:Math.sin(time*.6+i)*.12)+i*.4);}ctx.globalAlpha=1;canvas.dataset.flowers=String(visible);}
+
+
+
+ function drawBouquet(g,cx,cy,scale){g.save();g.translate(cx,cy);g.scale(scale,scale);const heads=[[-76,-64,24,'#efabc5'],[-39,-106,29,'#f3c5d4'],[5,-119,27,'#bda2d4'],[53,-96,28,'#efabc5'],[88,-49,23,'#f1d3ac'],[-17,-48,31,'#e997b8'],[34,-43,25,'#f3d2ac']];g.lineWidth=3;g.strokeStyle='#91ad9b';for(const [x,y] of heads){g.beginPath();g.moveTo(0,112);g.quadraticCurveTo(x*.4,20,x,y);g.stroke();}for(const [x,y,r] of [[-70,-18,-.8],[65,-14,.7],[-42,-69,-.4],[25,-86,.6]])leaf(g,x,y,r,20);g.fillStyle='#f6dedc';g.beginPath();g.moveTo(-94,-11);g.lineTo(29,134);g.lineTo(52,139);g.lineTo(101,-13);g.lineTo(0,28);g.closePath();g.fill();g.fillStyle='#cf94b0';g.beginPath();g.moveTo(-94,-11);g.lineTo(0,28);g.lineTo(101,-13);g.lineTo(32,135);g.lineTo(-28,135);g.closePath();g.fill();g.fillStyle='#eeb7ca';g.beginPath();g.moveTo(0,28);g.lineTo(101,-13);g.lineTo(32,135);g.closePath();g.fill();for(const [x,y,size,color] of heads)blossom(g,x,y,size,color,x*.01);g.strokeStyle='#8f5273';g.lineWidth=6;g.lineCap='round';g.beginPath();g.moveTo(-27,93);g.lineTo(35,93);g.stroke();g.fillStyle='#9f5b7f';for(const direction of [-1,1]){g.beginPath();g.moveTo(3,94);g.bezierCurveTo(direction*65,52,direction*59,124,3,94);g.fill();g.beginPath();g.moveTo(3,96);g.lineTo(direction*24,129);g.lineTo(direction*17,101);g.fill();}g.fillStyle='#f6d4dd';g.beginPath();g.arc(3,93,6,0,Math.PI*2);g.fill();g.restore();}
+
+
+
+ async function showVideoLead(){clearCelebrationTimer();const shown=await changeModalScene('videoLead','videoLeadTitle',()=>{$('confetti').replaceChildren();});if(shown&&celebration.open&&!$('videoLead').hidden&&!closingDialogs.has(celebration))videoTimer=setTimeout(showVideo,6000);}
+
+
+
+ $('skipVideoLead').onclick=()=>{clearCelebrationTimer();showVideo();};
+
+
+
+
+ // Original canvas doodles shared by the screen card and the downloadable card.
+ function tinyHeart(g,x,y,size,color){g.save();g.translate(x,y);g.scale(size,size);g.fillStyle=color;g.beginPath();g.moveTo(0,7);g.bezierCurveTo(-24,-8,-12,-21,0,-10);g.bezierCurveTo(12,-21,24,-8,0,7);g.fill();g.restore();}
+ function drawKitten(g,x,y,scale,lavender=false){
+   g.save();g.translate(x,y);g.scale(scale,scale);g.lineWidth=2.2;g.lineCap='round';g.lineJoin='round';g.strokeStyle='#80546c';
+   const fur=lavender?'#dfd0ed':'#fff1df',ear=lavender?'#c2a6d5':'#edb0ba';
+   g.strokeStyle=fur;g.lineWidth=12;g.beginPath();g.moveTo(23,32);g.bezierCurveTo(58,43,59,9,44,12);g.stroke();g.strokeStyle='#80546c';g.lineWidth=2.2;
+   g.fillStyle=fur;g.beginPath();g.ellipse(0,25,29,31,0,0,Math.PI*2);g.fill();g.stroke();
+   g.beginPath();g.moveTo(-33,-7);g.lineTo(-32,-44);g.quadraticCurveTo(-30,-49,-25,-44);g.lineTo(-10,-29);g.quadraticCurveTo(0,-32,12,-29);g.lineTo(29,-45);g.quadraticCurveTo(34,-48,34,-40);g.lineTo(34,-7);g.bezierCurveTo(40,25,-39,27,-33,-7);g.closePath();g.fill();g.stroke();
+   g.fillStyle=ear;for(const sign of [-1,1]){g.beginPath();g.moveTo(sign*26,-36);g.lineTo(sign*17,-25);g.lineTo(sign*28,-22);g.closePath();g.fill();}
+   g.strokeStyle='#80546c';for(const x of [-13,13]){g.beginPath();g.moveTo(x-5,-3);g.quadraticCurveTo(x,-10,x+5,-3);g.stroke();}
+   g.fillStyle='#eba7b6';for(const x of [-24,24]){g.beginPath();g.ellipse(x,4,7,4,0,0,Math.PI*2);g.fill();}
+   g.fillStyle='#a86e83';g.beginPath();g.moveTo(-3,1);g.lineTo(3,1);g.lineTo(0,4);g.closePath();g.fill();g.beginPath();g.moveTo(-5,7);g.quadraticCurveTo(-1,11,0,5);g.quadraticCurveTo(1,11,5,7);g.stroke();
+   for(const sign of [-1,1])for(const dy of [0,7]){g.beginPath();g.moveTo(sign*27,dy);g.lineTo(sign*40,dy-3);g.stroke();}
+   tinyHeart(g,0,35,1.4,'#d983a6');g.fillStyle=fur;for(const sign of [-1,1]){g.beginPath();g.ellipse(sign*23,27,8,12,sign*.6,0,Math.PI*2);g.fill();g.stroke();g.beginPath();g.ellipse(sign*15,52,12,7,0,0,Math.PI*2);g.fill();g.stroke();}
+   blossom(g,lavender?-28:28,-28,10,lavender?'#efb8ce':'#c3acd9',.25);g.restore();
+ }
+ function floralSprig(g,x,y,scale,flip=1){g.save();g.translate(x,y);g.scale(scale*flip,scale);g.strokeStyle='#9fb5a0';g.lineWidth=2;g.lineCap='round';g.beginPath();g.moveTo(0,52);g.quadraticCurveTo(-12,13,4,-20);g.moveTo(-3,36);g.quadraticCurveTo(16,16,29,13);g.stroke();leaf(g,-11,23,.5,10);leaf(g,9,35,-.6,11);blossom(g,4,-20,16,'#efb4ce',.25);blossom(g,29,13,12,'#cdb7e4',.4);blossom(g,-7,3,9,'#fff0d8',.3);g.restore();}
+
+ function drawLoopy(g,x,y,scale,tilt=0){
+  g.save();g.translate(x,y);g.rotate(tilt);g.scale(scale,scale);g.lineJoin='round';g.lineCap='round';
+  const oval=(x,y,rx,ry,color,outline=true)=>{g.fillStyle=color;g.beginPath();g.ellipse(x,y,rx,ry,0,0,Math.PI*2);if(outline){g.strokeStyle='#fff4f7';g.lineWidth=7;g.stroke();}g.fill();};
+  oval(0,32,34,40,'#efa3bf');oval(-25,65,17,10,'#efa3bf');oval(24,65,17,10,'#efa3bf');
+  oval(-43,-33,14,16,'#eda2be');oval(43,-33,14,16,'#eda2be');oval(-43,-33,7,9,'#ce7f9f',false);oval(43,-33,7,9,'#ce7f9f',false);
+  oval(0,-13,49,42,'#f3aec8');
+  g.strokeStyle='#bd7b9c';g.lineWidth=2.5;g.beginPath();g.moveTo(-9,-53);g.quadraticCurveTo(-19,-67,-5,-64);g.quadraticCurveTo(7,-62,2,-54);g.stroke();
+  oval(-20,-20,3.3,4.5,'#5c344c',false);oval(20,-20,3.3,4.5,'#5c344c',false);oval(0,-6,12,8,'#965d83',false);
+  oval(-33,-2,10,5,'#ea8faf',false);oval(33,-2,10,5,'#ea8faf',false);
+  g.strokeStyle='#87536f';g.lineWidth=2;g.beginPath();g.moveTo(-13,8);g.quadraticCurveTo(0,20,13,8);g.stroke();g.fillStyle='#fff9ef';g.fillRect(-6,13,12,8);g.strokeStyle='#c9a5b9';g.lineWidth=1;g.beginPath();g.moveTo(0,14);g.lineTo(0,20);g.stroke();
+  tinyHeart(g,7,43,1.55,'#c8618c');oval(-22,34,10,15,'#f3aec8',false);oval(27,35,9,14,'#f3aec8',false);
+  g.restore();
+ }
+ function drawRose(g,x,y,size,color='#d9789e'){
+  g.save();g.translate(x,y);g.scale(size,size);g.fillStyle=color;g.strokeStyle='#fff2f4';g.lineWidth=.12;g.beginPath();for(let i=0;i<7;i++){const a=i*Math.PI*2/7;g.ellipse(Math.cos(a)*.4,Math.sin(a)*.4,.65,.48,a,0,Math.PI*2);}g.stroke();g.fill();g.strokeStyle='#aa527b';g.lineWidth=.09;g.lineCap='round';g.beginPath();for(let t=0;t<Math.PI*4.1;t+=.08){const r=.04+t*.047,x=Math.cos(t)*r,y=Math.sin(t)*r;if(t===0)g.moveTo(x,y);else g.lineTo(x,y);}g.stroke();g.beginPath();g.arc(-.09,.1,.76,.1,2.4);g.stroke();g.restore();
+ }
+ function roseBouquet(g,x,y,scale,tilt=.25){g.save();g.translate(x,y);g.rotate(tilt);g.scale(scale,scale);g.fillStyle='#eee0cf';g.strokeStyle='#fff5ec';g.lineWidth=3;g.beginPath();g.moveTo(-39,4);g.lineTo(7,93);g.lineTo(44,0);g.closePath();g.fill();g.stroke();g.strokeStyle='#8ba68f';g.lineWidth=2.5;for(const dx of [-22,0,25]){g.beginPath();g.moveTo(5,75);g.quadraticCurveTo(dx,30,dx,-15);g.stroke();}leaf(g,-28,9,-.65,17);leaf(g,26,24,.45,18);leaf(g,2,-21,-.7,15);drawRose(g,-23,-10,21,'#e59ab3');drawRose(g,22,-6,22,'#c9648f');drawRose(g,0,-36,23,'#eab4c7');g.fillStyle='#b694c9';g.beginPath();g.moveTo(6,65);g.bezierCurveTo(-35,30,-39,87,6,65);g.bezierCurveTo(41,28,46,83,6,65);g.fill();g.strokeStyle='#b694c9';g.lineWidth=5;g.beginPath();g.moveTo(6,65);g.quadraticCurveTo(3,90,-8,99);g.moveTo(6,65);g.quadraticCurveTo(15,82,26,81);g.stroke();g.restore();}
+ function stickerStar(g,x,y,r,tilt=0){g.save();g.translate(x,y);g.rotate(tilt);g.fillStyle='#f3d18f';g.strokeStyle='#fff3dd';g.lineWidth=r*.15;g.beginPath();for(let i=0;i<10;i++){const a=i*Math.PI/5-Math.PI/2,rr=i%2?r*.48:r;g.lineTo(Math.cos(a)*rr,Math.sin(a)*rr);}g.closePath();g.stroke();g.fill();g.restore();}
+ function washiTape(g,x,y,w,angle=0){g.save();g.translate(x,y);g.rotate(angle);g.fillStyle=cardPalette().tape+'bb';g.fillRect(-w/2,-9,w,18);g.fillStyle='#fff5f15c';for(let i=-w/2+6;i<w/2;i+=11){g.beginPath();g.arc(i,0,2,0,Math.PI*2);g.fill();}g.restore();}
+ function drawEndingDecor(){const c=$('endingDecor'),art=$('endingArt'),w=art.clientWidth,h=art.clientHeight;if(!w||!h)return;const dpr=Math.min(devicePixelRatio||1,2);c.width=Math.round(w*dpr);c.height=Math.round(h*dpr);const g=c.getContext('2d');g.scale(dpr,dpr);const small=w<400,tiny=w<280;
+  washiTape(g,small?w*.37:176,small?34:39,small?64:90,-.24);
+  roseBouquet(g,w-(small?42:66),small?79:93,small?.61:.94,.33);
+  drawLoopy(g,w-(small?48:84),h-(small?80:115),small?.77:1.04,.13);
+  drawKitten(g,small?32:60,h-(small?27:45),small?.45:.58,false);
+  stickerStar(g,small?13:33,small?114:150,small?9:13,-.28);stickerStar(g,w-(small?19:30),h-(small?17:48),small?7:10,.2);
+  tinyHeart(g,w-(small?27:58),small?154:196,small?.32:.48,'#edb2c9');tinyHeart(g,small?95:149,h-20,.28,'#cdb7e4');drawBunny(g,w*.53,h-28,small?.30:.43,-.12);happyStar(g,small?14:31,small?213:238,small?8:12,.2);
+ }
+ new ResizeObserver(drawEndingDecor).observe($('endingArt'));
+
+ function recipientWish(){return activeRecipient?.wish||"Mừng ngày 20/10, chúc bạn có thật nhiều niềm vui, những tình bạn chân thành và những khoảnh khắc được yêu thương. Mong các dự định của bạn dần thành hiện thực, những ngày bận rộn vẫn có phút nghỉ ngơi và những ngày bình thường cũng có điều để mỉm cười. Liber gửi bạn lời chúc vui khỏe và một hành trình thật nhiều kỷ niệm đẹp!";}
+ function showEnding(){clearCelebrationTimer();return changeModalScene('endingStage','endingTitle',()=>{$('endingName').textContent=nickname||'Bạn';$('endingWish').textContent=recipientWish();renderRecipientPortrait();drawEndingDecor();$('cardStatus').textContent='';$('cardFallback').hidden=true;const bouquet=$('bouquet'),g=bouquet.getContext('2d');g.clearRect(0,0,bouquet.width,bouquet.height);drawBouquet(g,360,290,1.7);},'saveCard');}
+
+
+
+ $('replayGreeting').onclick=()=>{greetingVideo.currentTime=0;showVideo();};
+
+
+
+ function wrapCardText(g,text,maxWidth){const lines=[];let line='';for(const word of text.normalize('NFC').split(/\s+/)){if(g.measureText(word).width>maxWidth){if(line){lines.push(line);line='';}for(const char of Array.from(word)){if(g.measureText(line+char).width>maxWidth){lines.push(line);line=char;}else line+=char;}}else{const next=line?line+' '+word:word;if(g.measureText(next).width>maxWidth){lines.push(line);line=word;}else line=next;}}if(line)lines.push(line);return lines;}
+
+
+
+
+
+ function drawBunny(g,x,y,scale,tilt=-.1){
+  g.save();g.translate(x,y);g.rotate(tilt);g.scale(scale,scale);g.lineWidth=5;g.strokeStyle='#fff8ef';g.lineJoin='round';
+  const oval=(x,y,rx,ry,color,angle=0)=>{g.fillStyle=color;g.beginPath();g.ellipse(x,y,rx,ry,angle,0,Math.PI*2);g.stroke();g.fill();};
+  oval(-17,-43,10,31,'#fff0dc',-.18);oval(16,-46,10,31,'#fff0dc',.15);g.lineWidth=0;g.fillStyle='#efbdcf';for(const x of [-17,16]){g.beginPath();g.ellipse(x,-47,4,19,x<0?-.18:.15,0,Math.PI*2);g.fill();}g.lineWidth=4;
+  oval(0,36,27,28,'#dfcce9');oval(0,-2,35,29,'#fff0dc');oval(-16,60,12,7,'#fff0dc');oval(16,60,12,7,'#fff0dc');
+  g.fillStyle='#80556e';for(const x of [-12,12]){g.beginPath();g.arc(x,-6,2.6,0,Math.PI*2);g.fill();}g.fillStyle='#ebadc5';for(const x of [-24,24]){g.beginPath();g.ellipse(x,4,7,4,0,0,Math.PI*2);g.fill();}g.strokeStyle='#a47489';g.lineWidth=1.5;g.beginPath();g.moveTo(-5,8);g.quadraticCurveTo(0,14,5,8);g.stroke();stickerStar(g,0,32,17,.1);g.strokeStyle='#fff8ef';oval(-23,30,8,11,'#fff0dc',-.3);oval(23,30,8,11,'#fff0dc',.3);blossom(g,27,-20,9,'#c6afd9',.4);g.restore();
+ }
+ function happyStar(g,x,y,r,tilt=.15){g.save();g.translate(x,y);g.rotate(tilt);stickerStar(g,0,0,r);g.fillStyle='#8f6572';for(const dx of [-.18,.18]){g.beginPath();g.arc(r*dx,0,r*.045,0,Math.PI*2);g.fill();}g.strokeStyle='#a77580';g.lineWidth=Math.max(1,r*.035);g.beginPath();g.arc(0,r*.09,r*.1,0,Math.PI);g.stroke();g.restore();}
+ function storySprinkles(g){
+  const dots=[[67,290,4],[1005,552,4],[40,790,3],[995,1120,5],[72,1250,4],[1010,1490,3],[570,1785,4],[470,1815,3],[1000,1730,4],[310,185,3]];
+  for(const [x,y,r]of dots){g.fillStyle='#cfacd0';g.beginPath();g.arc(x,y,r,0,Math.PI*2);g.fill();}
+  tinyHeart(g,68,576,.46,'#d79dbb');tinyHeart(g,994,749,.5,'#d1b1e0');tinyHeart(g,1007,1370,.42,'#efb9d0');happyStar(g,68,390,21,-.15);happyStar(g,1009,1194,18,.2);stickerStar(g,534,1801,12,.3);
+ }
+
+ function drawCardHeading(g,width){
+  g.save();g.scale(width/1080,width/1080);g.textBaseline='middle';g.textAlign='left';
+  g.fillStyle=cardPalette().ink;g.font='700 72px "Nunito", "Segoe UI", sans-serif';g.fillText('L I B E R',85,99);
+  g.fillStyle=cardPalette().accent;g.font='600 37px "Dancing Script", "Nunito", cursive';g.fillText('Gửi riêng bạn, với yêu thương',90,166);
+  // A tiny flying love letter bridges the free space between the title and date.
+  g.save();g.translate(658,118);g.rotate(-.13);g.fillStyle='#eacddd';g.strokeStyle='#fff0f3';g.lineWidth=3;g.beginPath();g.roundRect(-57,-36,114,76,7);g.fill();g.stroke();g.strokeStyle='#c18cab';g.lineWidth=2;g.beginPath();g.moveTo(-54,-32);g.lineTo(0,6);g.lineTo(54,-32);g.moveTo(-54,36);g.lineTo(-17,3);g.moveTo(54,36);g.lineTo(17,3);g.stroke();tinyHeart(g,0,7,.75,'#bf6a94');g.restore();
+  g.strokeStyle='#d5afd08c';g.lineWidth=2;g.setLineDash([3,7]);g.beginPath();g.moveTo(545,98);g.bezierCurveTo(553,43,642,41,710,59);g.stroke();g.setLineDash([]);stickerStar(g,743,88,15,.18);tinyHeart(g,571,143,.37,'#e0a3c4');
+  g.save();g.translate(917,132);g.rotate(.10);g.fillStyle='#f2d4df';g.shadowColor='#0003';g.shadowBlur=10;g.shadowOffsetY=5;g.fillRect(-111,-62,222,124);g.shadowBlur=0;g.shadowOffsetY=0;g.strokeStyle='#be87a444';g.lineWidth=1.5;g.strokeRect(-102,-53,204,106);g.textAlign='center';g.fillStyle='#8d4c70';g.font='700 46px "Nunito", "Segoe UI", sans-serif';g.fillText('20/10',0,-12);g.font='600 25px "Dancing Script", "Nunito", cursive';g.fillText('Dành cho bạn ♡',0,34);g.restore();
+  blossom(g,1020,66,17,'#cbb3df',.3);leaf(g,1038,85,.7,10);g.restore();
+ }
+
+ function drawWishNote(g,x,y,width,height,tilt){
+  g.save();g.translate(x,y);g.rotate(tilt);g.fillStyle=cardPalette().note;g.shadowColor='#0003';g.shadowBlur=12;g.fillRect(0,0,width,height);g.shadowBlur=0;if(activeCardTheme==='rose'){g.strokeStyle=cardPalette().back;g.lineWidth=2;g.strokeRect(8,8,width-16,height-16);}
+  const padX=44,padY=30,available=height-padY*2;let fontSize=34,lines;
+  do{g.font=`${fontSize}px "Nunito", "Segoe UI", sans-serif`;lines=wrapCardText(g,recipientWish(),width-padX*2);if(lines.length*fontSize*1.45<=available)break;fontSize--;}while(fontSize>20);
+  const lineHeight=Math.min(available/lines.length,fontSize*1.7),top=(height-lines.length*lineHeight)/2+lineHeight/2;
+  g.fillStyle=cardPalette().noteInk;g.textAlign='left';g.textBaseline='middle';lines.forEach((line,i)=>g.fillText(line,padX,top+i*lineHeight));washiTape(g,width-145,0,126,-.16);g.restore();
+ }
+
+ function drawLiberSignature(g,right,baseline,size){
+  g.save();g.fillStyle=cardPalette().accent;g.strokeStyle=cardPalette().accent;g.lineWidth=1.8;g.lineCap='round';g.font=`600 ${size}px "Dancing Script", "Nunito", cursive`;g.textAlign='right';g.textBaseline='alphabetic';g.fillText('Liber',right,baseline);
+  const width=g.measureText('Liber').width;g.beginPath();g.moveTo(right-width-8,baseline+9);g.quadraticCurveTo(right-width*.45,baseline-1,right+5,baseline+6);g.moveTo(right-width*.65,baseline+15);g.quadraticCurveTo(right-width*.3,baseline+7,right-7,baseline+12);g.stroke();g.restore();
+ }
+
+ function makeStoryKeepsake(){
+  const card=document.createElement('canvas');card.width=1080;card.height=1920;const g=card.getContext('2d');const bg=g.createLinearGradient(0,0,1080,1920);bg.addColorStop(0,cardPalette().bg1);bg.addColorStop(1,cardPalette().bg2);g.fillStyle=bg;g.fillRect(0,0,1080,1920);g.textBaseline='middle';g.textAlign='left';storySprinkles(g);
+  drawCardHeading(g,1080);
+  g.save();g.translate(495,662);g.rotate(.025);g.fillStyle=cardPalette().back;g.fillRect(-365,-422,730,850);g.restore();
+  g.save();g.translate(484,654);g.rotate(-.065);g.fillStyle=cardPalette().frame;g.shadowColor='#0005';g.shadowBlur=24;g.shadowOffsetY=12;g.fillRect(-365,-422,730,850);g.shadowBlur=0;g.shadowOffsetY=0;
+  if(activeRecipientImage){const img=activeRecipientImage,ratio=Math.min(690/img.naturalWidth,770/img.naturalHeight),iw=img.naturalWidth*ratio,ih=img.naturalHeight*ratio;g.fillStyle=cardPalette().photo;g.fillRect(-345,-402,690,770);g.drawImage(img,-iw/2,-402+(770-ih)/2,iw,ih);}else{g.save();g.translate(-484,-654);drawBouquet(g,484,654,2.7);g.restore();}g.restore();
+  washiTape(g,440,233,180,-.13);roseBouquet(g,945,340,1.15,.32);drawLoopy(g,947,979,1.45,.16);drawKitten(g,78,1066,.91);tinyHeart(g,258,1108,.4,'#e7b4ce');
+  g.save();g.translate(98,1176);g.rotate(-.02);let size=66,lines;do{g.font=`600 ${size}px "Dancing Script", "Nunito", cursive`;lines=wrapCardText(g,(nickname||'Bạn')+' ơi,',875);if(lines.length<=2)break;size-=2;}while(size>34);g.fillStyle=cardPalette().accent;lines.forEach((line,i)=>g.fillText(line,0,i*70));g.font='35px "Nunito", "Segoe UI", sans-serif';g.fillStyle=cardPalette().ink;g.fillText('Hãy luôn rạng rỡ nhé!',0,lines.length*70+2);g.restore();
+  const noteY=lines.length>1?1395:1335;drawWishNote(g,101,noteY,875,330,.025);
+  drawBunny(g,184,1836,.85,-.12);happyStar(g,340,1785,27,.13);tinyHeart(g,296,1880,.35,'#e7aac5');floralSprig(g,1000,1794,.58,-1);
+  g.textAlign='right';g.fillStyle=cardPalette().accent;g.font='26px "Nunito", "Segoe UI", sans-serif';g.fillText('Thân thương, từ các bạn trai Liber',963,1829);drawLiberSignature(g,951,1894,64);return card;
+ }
+
+ function makeKeepsake(format="classic"){
+  if(format==='story')return makeStoryKeepsake();
+  const story=format==='story',logicalHeight=story?1920/0.9:1600;const card=document.createElement('canvas');card.width=story?1080:1200;card.height=story?1920:1600;const g=card.getContext('2d');if(story)g.scale(.9,.9);const bg=g.createLinearGradient(0,0,1200,logicalHeight);bg.addColorStop(0,cardPalette().bg1);bg.addColorStop(1,cardPalette().bg2);g.fillStyle=bg;g.fillRect(0,0,1200,logicalHeight);if(story)g.translate(0,150);g.textBaseline='middle';g.textAlign='left';drawCardHeading(g,1200);
+  g.save();g.translate(475,507);g.rotate(.065);g.fillStyle=cardPalette().back;g.fillRect(-240,-280,480,570);g.restore();
+  if(activeRecipientImage){const img=activeRecipientImage;g.save();g.translate(442,509);g.rotate(-.12);g.fillStyle=cardPalette().frame;g.shadowColor='#0005';g.shadowBlur=22;g.shadowOffsetY=10;g.fillRect(-240,-280,480,574);g.shadowBlur=0;g.shadowOffsetY=0;const ratio=Math.min(440/img.naturalWidth,490/img.naturalHeight),iw=img.naturalWidth*ratio,ih=img.naturalHeight*ratio;g.fillStyle=cardPalette().photo;g.fillRect(-220,-260,440,490);g.drawImage(img,-iw/2,-260+(490-ih)/2,iw,ih);g.restore();}else drawBouquet(g,440,530,1.9);
+  washiTape(g,418,232,175,-.21);roseBouquet(g,971,371,2.1,.35);drawLoopy(g,938,736,2.6,.14);drawKitten(g,136,803,1.25);stickerStar(g,110,345,24,-.24);stickerStar(g,1105,934,19,.2);tinyHeart(g,1063,595,.9,'#e49ab9');tinyHeart(g,742,879,.6,'#bca3d6');
+  if(story)g.translate(0,80);g.save();g.translate(110,939);g.rotate(-.025);g.fillStyle=cardPalette().accent;let size=66,lines;do{g.font=`600 ${size}px "Dancing Script", "Nunito", cursive`;lines=wrapCardText(g,(nickname||'Bạn')+' ơi,',960);if(lines.length<=2)break;size-=2;}while(size>32);lines.forEach((line,i)=>g.fillText(line,0,i*65));g.fillStyle=cardPalette().ink;g.font='38px "Nunito", "Segoe UI", Arial, sans-serif';g.fillText('Hãy luôn rạng rỡ nhé!',0,lines.length*65+2);g.restore();
+  const noteY=lines.length>1?1135:1085;drawWishNote(g,131,noteY,940,310,.035);
+  if(story)g.translate(0,40);g.textAlign='right';g.fillStyle=cardPalette().accent;g.font='28px "Nunito", "Segoe UI", Arial, sans-serif';g.fillText('Thân thương, từ các bạn trai Liber',1080,1510);drawLiberSignature(g,1068,1574,60);floralSprig(g,104,1481,.9,-1);stickerStar(g,289,1442,12,.4);drawBunny(g,360,1511,.7,-.14);happyStar(g,475,1492,21,.2);return card;
+ }
+
+
+ document.querySelectorAll('input[name="cardFormat"]').forEach(input=>input.addEventListener('change',()=>{$('cardFallback').hidden=true;$('cardStatus').textContent='';}));
+ $('saveCard').onclick=async()=>{
+   const button=$('saveCard'),choices=[...document.querySelectorAll('input[name="cardFormat"],input[name="cardTheme"]')],format=choices.find(input=>input.name==='cardFormat'&&input.checked)?.value||'classic';button.disabled=true;choices.forEach(input=>input.disabled=true);$('cardFallback').hidden=true;$('cardStatus').textContent='Đang chuẩn bị thiệp của bạn…';
+   try{await photoReady;await document.fonts.ready;await document.fonts.load('600 66px "Dancing Script"');await document.fonts.load('400 34px "Nunito"');await document.fonts.load('700 72px "Nunito"');const data=makeKeepsake(format).toDataURL('image/png');const name=(nickname||'ban').normalize('NFC').replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'')||'ban';const a=document.createElement('a');a.href=data;a.download='Liber-20-10-'+name+'-'+activeCardTheme+(format==='story'?'-Story-9x16':'')+'.png';document.body.append(a);a.click();a.remove();$('cardFallback').href=data;$('cardFallback').download=a.download;$('cardFallback').hidden=false;$('cardStatus').textContent=(format==='story'?'Thiệp story đã sẵn sàng.':'Thiệp đã sẵn sàng.')+' Nếu chưa thấy ảnh tải xuống, mở ảnh bên dưới để lưu nhé.';
+   }catch(e){$('cardStatus').textContent='Chưa tạo được thiệp. Bạn thử nhấn lại nhé.';}finally{button.disabled=false;choices.forEach(input=>input.disabled=false);}
+ };
+
+
+
+
+
+
+
+
+ if(bundledGreetingVideo){greetingVideo.src=bundledGreetingVideo;configureVideo();}
+
+
+
+ window.addEventListener('pagehide',()=>{clearCelebrationTimer();greetingVideo.pause();});
+
+
+
+
+
+
+
+ window.addEventListener('pagehide',()=>{clearTimeout(unlockTimer);stop();});
+
+
+ window.addEventListener('pageshow',e=>{if(e.persisted&&activePage==='welcome')resetCardEntry();});
+
+
+
+ // Public Apps Script URL only. No Google credentials are included in this page.
+ const FEEDBACK_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxrg-na4Lgu6m0rizikm_Zq0AQQIsw_5Aj2gPtodqZI9gAB2WuTEcRLyum5MryiDVw1AA/exec';
+ const feedbackDrafts=new Map();let currentFeedbackId=null,feedbackBusy=false;
+ function feedbackMood(score){return score<20?'Buồn một chút':score<40?'Chưa vui lắm':score<60?'Bình thường':score<80?'Khá vui':'Vui hết nấc';}
+ function catDrawing(score,thumb=false){
+  const t=score/100,curve=94+(t-.5)*30,eye=score>=75?'<path d="M74 73Q81 61 88 73M112 73Q119 61 126 73" fill="none" stroke="#6b4a59" stroke-width="4" stroke-linecap="round"/>':'<ellipse cx="81" cy="72" rx="5" ry="'+(7-t*2)+'" fill="#6b4a59"/><ellipse cx="119" cy="72" rx="5" ry="'+(7-t*2)+'" fill="#6b4a59"/><circle cx="83" cy="70" r="1.6" fill="white"/><circle cx="121" cy="70" r="1.6" fill="white"/>';
+  const tears=score<25?'<path d="M69 81Q59 94 68 96Q77 94 69 81M132 81Q123 94 132 96Q141 94 132 81" fill="#aacbdc" opacity="'+(1-t*3)+'"/>':'';
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="'+(thumb?'40 10 120 115':'0 0 220 175')+'">'+(!thumb?'<ellipse cx="108" cy="160" rx="68" ry="8" fill="#b994aa" opacity=".18"/><path class="cat-tail" d="M153 143Q203 154 193 117" fill="none" stroke="#ebcbb7" stroke-width="16" stroke-linecap="round"/><ellipse cx="106" cy="128" rx="46" ry="35" fill="#f6e2ce" stroke="#c99caa" stroke-width="2"/><ellipse cx="79" cy="151" rx="19" ry="10" fill="#fff1df"/><ellipse cx="131" cy="151" rx="19" ry="10" fill="#fff1df"/>':'')+'<path d="M52 57L48 '+(17+(1-t)*13)+'Q68 20 82 41Q100 33 119 41Q137 20 153 '+(17+(1-t)*13)+'L148 60Q162 99 132 112Q100 125 69 112Q39 98 52 57" fill="#fff0dc" stroke="#bb8c9e" stroke-width="2.5"/><path d="M56 49L55 31L74 44M127 44L146 31L145 51" fill="#efb8c8"/>'+eye+'<ellipse cx="65" cy="88" rx="10" ry="5" fill="#ed9fb9" opacity="'+(.25+t*.6)+'"/><ellipse cx="136" cy="88" rx="10" ry="5" fill="#ed9fb9" opacity="'+(.25+t*.6)+'"/><path d="M96 82Q100 79 104 82L100 87Z" fill="#b87e97"/><path d="M87 96Q100 '+curve+' 113 96" fill="none" stroke="#855e73" stroke-width="3" stroke-linecap="round"/><path d="M56 79L43 76M55 86L41 86M146 79L159 76M147 86L161 86" stroke="#bb8c9e" stroke-width="1.5" stroke-linecap="round"/>'+tears+(!thumb?'<g fill="#df8eac" opacity="'+Math.max(0,(t-.65)/.35)+'"><path d="M27 43C9 25 2 48 27 60C53 43 40 26 27 43"/><path d="M184 28C170 14 160 32 184 43C208 30 197 14 184 28"/></g>':'')+'</svg>';
+ }
+ function updateFeedbackCat(){const score=Number($('catScore').value);$('feedbackCat').innerHTML=catDrawing(score);$('catScoreOutput').value=score+' / 100';$('catMood').textContent=feedbackMood(score);$('catScore').setAttribute('aria-valuetext',score+' trên 100, '+feedbackMood(score));$('catScore').style.setProperty('--cat-fill',score+'%');$('catScore').style.setProperty('--cat-thumb','url("data:image/svg+xml,'+encodeURIComponent(catDrawing(score,true))+'")');}
+ function feedbackKey(id){return 'liber-feedback-v1:'+id;}
+ function readFeedbackDraft(id){if(feedbackDrafts.has(id))return feedbackDrafts.get(id);try{const d=JSON.parse(localStorage.getItem(feedbackKey(id))||'null');if(d&&typeof d.feelings==='string'&&typeof d.impression==='string'&&Number.isInteger(d.score)&&d.score>=0&&d.score<=100){feedbackDrafts.set(id,d);return d;}}catch{}return {feelings:'',impression:'',score:50,requestId:'',sent:false};}
+ function keepFeedbackDraft(id,draft){feedbackDrafts.set(id,draft);try{localStorage.setItem(feedbackKey(id),JSON.stringify(draft));}catch{}}
+ function saveFeedbackDraft(){if(!currentFeedbackId||feedbackBusy)return;const old=readFeedbackDraft(currentFeedbackId),next={feelings:$('feedbackFeeling').value,impression:$('feedbackImpression').value,score:Number($('catScore').value)};const changed=next.feelings!==old.feelings||next.impression!==old.impression||next.score!==old.score;keepFeedbackDraft(currentFeedbackId,{...old,...next,...(changed?{requestId:'',sent:false}:{})});}
+ function loadFeedbackDraft(){currentFeedbackId=activeRecipient?.id||null;const d=currentFeedbackId?readFeedbackDraft(currentFeedbackId):{feelings:'',impression:'',score:50};$('feedbackName').textContent=nickname||'Bạn';$('feedbackFeeling').value=d.feelings;$('feedbackImpression').value=d.impression;$('catScore').value=d.score;$('feedbackStatus').textContent='';updateFeedbackCat();}
+ function openFeedback(edit=false){if(feedbackBusy)return;loadFeedbackDraft();const sent=currentFeedbackId&&readFeedbackDraft(currentFeedbackId).sent;if(sent&&!edit){$('feedbackThanksName').textContent=nickname;return changeModalScene('feedbackThanks','feedbackThanksTitle',null,'feedbackThanksTitle');}return changeModalScene('feedbackStage','feedbackTitle',null,'feedbackTitle');}
+ $('openFeedback').onclick=()=>openFeedback();$('feedbackBack').onclick=()=>{saveFeedbackDraft();showEnding();};$('feedbackReturnCard').onclick=showEnding;$('feedbackEdit').onclick=()=>openFeedback(true);
+ for(const id of ['feedbackFeeling','feedbackImpression'])$(id).addEventListener('input',saveFeedbackDraft);$('catScore').addEventListener('input',()=>{updateFeedbackCat();saveFeedbackDraft();});
+ function sendFeedbackToGoogle(data){return new Promise((resolve,reject)=>{
+  if(!/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(FEEDBACK_ENDPOINT)){reject(new Error('Khảo sát chưa được kết nối. Câu trả lời đã được giữ trên thiết bị này để bạn gửi lại sau.'));return;}
+  const channel=crypto.randomUUID(),frame=document.createElement('iframe'),form=document.createElement('form');frame.name='liber-feedback-'+channel;frame.hidden=true;frame.title='Gửi phản hồi tới Liber';form.method='POST';form.action=FEEDBACK_ENDPOINT;form.target=frame.name;form.hidden=true;const input=document.createElement('input');input.name='payload';input.value=JSON.stringify({...data,channel});form.append(input);let timer;
+  const cleanup=()=>{clearTimeout(timer);window.removeEventListener('message',receive);form.remove();frame.remove();};
+  const receive=event=>{let host;try{const origin=new URL(event.origin);if(origin.protocol!=='https:')return;host=origin.hostname;}catch{return;}if(host!=='script.google.com'&&host!=='script.googleusercontent.com'&&!host.endsWith('-script.googleusercontent.com'))return;const r=event.data;if(!r||r.type!=='liber-feedback-result'||r.channel!==channel||r.requestId!==data.requestId)return;cleanup();if(r.ok===true)resolve(r);else reject(new Error(r.message||'Chưa lưu được phản hồi. Bạn thử gửi lại nhé.'));};
+  window.addEventListener('message',receive);document.body.append(frame,form);timer=setTimeout(()=>{cleanup();reject(new Error('Chưa nhận được xác nhận từ Google. Câu trả lời vẫn được giữ lại; bạn kiểm tra mạng rồi nhấn gửi lại nhé.'));},35000);form.submit();
+ });}
+ $('feedbackForm').addEventListener('submit',async event=>{event.preventDefault();if(feedbackBusy)return;const id=currentFeedbackId;if(!id){$('feedbackStatus').textContent='Bạn quay lại nhập tên để gửi cảm nhận nhé.';return;}for(const input of [$('feedbackFeeling'),$('feedbackImpression')]){if(!input.value.trim()){input.setCustomValidity('Bạn viết một chút cảm nhận tại đây nhé.');input.reportValidity();input.setCustomValidity('');return;}}saveFeedbackDraft();const draft=readFeedbackDraft(id);draft.requestId=draft.requestId||crypto.randomUUID();keepFeedbackDraft(id,draft);const payload={recipientId:id,feelings:draft.feelings.trim(),impression:draft.impression.trim(),score:draft.score,theme:activeCardTheme,requestId:draft.requestId};feedbackBusy=true;const controls=[...$('feedbackForm').querySelectorAll('input,textarea,button'),$('feedbackBack')];controls.forEach(el=>el.disabled=true);$('sendFeedback').textContent='Đang gửi…';$('feedbackStatus').textContent='Đang gửi lời nhắn của bạn tới Liber…';
+  try{await sendFeedbackToGoogle(payload);keepFeedbackDraft(id,{...draft,sent:true});if(currentFeedbackId===id){$('feedbackStatus').textContent='Đã lưu cảm nhận của bạn.';if(celebration.open&&!$('feedbackStage').hidden){$('feedbackThanksName').textContent=nickname;await changeModalScene('feedbackThanks','feedbackThanksTitle',null,'feedbackThanksTitle');}}}
+  catch(error){if(currentFeedbackId===id)$('feedbackStatus').textContent=error.message;}
+  finally{feedbackBusy=false;controls.forEach(el=>el.disabled=false);$('sendFeedback').textContent='Gửi cảm nhận ♡';}
+ });
+
+})();
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
