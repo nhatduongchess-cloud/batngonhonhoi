@@ -19,7 +19,7 @@ export default [
   {
     id: '1FSBO3P4eVapgKCqrL0SB3FRVoYY5jkbx',
     name: 'Trần Hoàng Nguyên Thảo',
-    aliases: [],
+    aliases: ['Nguyen Thao', 'Nguyên Thảo'],
     photo: 'assets/d20fa223db5b0697deb9.jpg',
     wish: 'Nguyên Thảo ơi, gửi bạn một chiếc ôm bằng lời trong ngày 20/10 này. Chúc những ngày sắp tới có nhiều cuộc gặp dễ thương, nhiều điều đáng mong chờ và những bước tiến khiến bạn tự hào. Nếu có lúc mọi thứ chưa như ý, mong bạn vẫn dịu dàng với chính mình. Liber chúc bạn được yêu quý theo cách thật chân thành!',
     theme: 'rose',

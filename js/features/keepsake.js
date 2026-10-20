@@ -1,9 +1,11 @@
+import { isBirthdayRecipient } from '../session/birthday.js';
+import { drawBirthdayCake } from '../drawing/birthday-cake.js';
 // The downloadable keepsake card: a 3:4 card or a 9:16 story, drawn on a canvas
 // in the chosen theme and saved as PNG.
 import { $ } from '../core/dom.js';
 import { state } from '../core/state.js';
 import { activeCardTheme, cardPalette } from '../session/card-theme.js';
-import { activeRecipientImage, photoReady, recipientWish } from '../session/recipient.js';
+import { activeRecipient, activeRecipientImage, photoReady, recipientWish } from '../session/recipient.js';
 import {
   blossom,
   drawBouquet,
@@ -83,31 +85,37 @@ function drawCardHeading(g, width) {
   g.fillText('L I B E R', 85, 99);
   g.fillStyle = cardPalette().accent;
   g.font = '600 37px "Dancing Script", "Nunito", cursive';
-  g.fillText('Gửi riêng bạn, với yêu thương', 90, 166);
+  g.fillText(
+    isBirthdayRecipient(activeRecipient) ? 'Happy Birthday, Nguyên Thảo!' : 'Gửi riêng bạn, với yêu thương',
+    90,
+    166,
+  );
   // A tiny flying love letter bridges the free space between the title and date.
-  g.save();
-  g.translate(658, 118);
-  g.rotate(-0.13);
-  g.fillStyle = '#eacddd';
-  g.strokeStyle = '#fff0f3';
-  g.lineWidth = 3;
-  g.beginPath();
-  g.roundRect(-57, -36, 114, 76, 7);
-  g.fill();
-  g.stroke();
-  g.strokeStyle = '#c18cab';
-  g.lineWidth = 2;
-  g.beginPath();
-  g.moveTo(-54, -32);
-  g.lineTo(0, 6);
-  g.lineTo(54, -32);
-  g.moveTo(-54, 36);
-  g.lineTo(-17, 3);
-  g.moveTo(54, 36);
-  g.lineTo(17, 3);
-  g.stroke();
-  tinyHeart(g, 0, 7, 0.75, '#bf6a94');
-  g.restore();
+  if (!isBirthdayRecipient(activeRecipient)) {
+    g.save();
+    g.translate(658, 118);
+    g.rotate(-0.13);
+    g.fillStyle = '#eacddd';
+    g.strokeStyle = '#fff0f3';
+    g.lineWidth = 3;
+    g.beginPath();
+    g.roundRect(-57, -36, 114, 76, 7);
+    g.fill();
+    g.stroke();
+    g.strokeStyle = '#c18cab';
+    g.lineWidth = 2;
+    g.beginPath();
+    g.moveTo(-54, -32);
+    g.lineTo(0, 6);
+    g.lineTo(54, -32);
+    g.moveTo(-54, 36);
+    g.lineTo(-17, 3);
+    g.moveTo(54, 36);
+    g.lineTo(17, 3);
+    g.stroke();
+    tinyHeart(g, 0, 7, 0.75, '#bf6a94');
+    g.restore();
+  }
   g.strokeStyle = '#d5afd08c';
   g.lineWidth = 2;
   g.setLineDash([3, 7]);
@@ -140,6 +148,7 @@ function drawCardHeading(g, width) {
   g.restore();
   blossom(g, 1020, 66, 17, '#cbb3df', 0.3);
   leaf(g, 1038, 85, 0.7, 10);
+  if (isBirthdayRecipient(activeRecipient)) drawBirthdayCake(g, 658, 115, 0.72);
   g.restore();
 }
 

@@ -12,3 +12,4 @@ loadFeature('celebration', () => import('./features/celebration/celebration.js')
 loadFeature('ending', () => import('./features/celebration/ending.js'));
 loadFeature('keepsake', () => import('./features/keepsake.js'));
 loadFeature('feedback', () => import('./features/feedback/feedback.js'));
+loadFeature('birthday', () => import('./features/birthday.js'));
