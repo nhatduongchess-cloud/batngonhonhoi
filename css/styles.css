@@ -465,3 +465,5 @@ body{font-size:17px;line-height:1.65}h1,.welcome h1,.guide h1,.hero h1,.card-wel
 @media(max-width:480px){.birthday-surprise{padding:24px 16px 18px;margin:20px auto}.birthday-cake{width:190px}}
 @media(prefers-reduced-motion:reduce){.birthday-surprise *{animation:none!important;transition:none!important}}
 
+
+.back-to-heart{display:flex;align-items:center;gap:9px;width:fit-content;max-width:calc(100% - 38px);min-height:44px;margin:0 0 18px;padding:10px 17px;border:1px solid var(--card-back);border-radius:24px;background:var(--card-note);color:var(--card-noteInk);font:600 15px/1.5 var(--body);text-align:left;transition:background .2s,transform .2s}.back-to-heart:hover{background:var(--card-frame);transform:translateX(-2px)}

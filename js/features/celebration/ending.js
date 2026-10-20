@@ -1,9 +1,9 @@
 // The ending card inside the celebration dialog: the recipient's photo (or a
 // bouquet), their wish, scrapbook doodles and the card theme picker.
-import { $ } from '../../core/dom.js';
+import { $, reducedMotion } from '../../core/dom.js';
 import { on } from '../../core/bus.js';
 import { state } from '../../core/state.js';
-import { changeModalScene } from '../../core/dialogs.js';
+import { changeModalScene, requestDialogClose } from '../../core/dialogs.js';
 import { cardPalette, setCardTheme } from '../../session/card-theme.js';
 import { recipientWish, renderRecipientPortrait } from '../../session/recipient.js';
 import {
@@ -64,6 +64,11 @@ function showEnding() {
 
 export function init() {
   on('ending:show', showEnding);
+  $('backToHeart').onclick = async () => {
+    await requestDialogClose($('celebration'));
+    $('openLetter').focus({ preventScroll: true });
+    $('title').scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
+  };
   new ResizeObserver(drawEndingDecor).observe($('endingArt'));
   document.querySelectorAll('input[name="cardTheme"]').forEach((input) =>
     input.addEventListener('change', () => {
