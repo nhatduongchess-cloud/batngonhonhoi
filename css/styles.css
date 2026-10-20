@@ -466,4 +466,16 @@ body{font-size:17px;line-height:1.65}h1,.welcome h1,.guide h1,.hero h1,.card-wel
 @media(prefers-reduced-motion:reduce){.birthday-surprise *{animation:none!important;transition:none!important}}
 
 
-.back-to-heart{display:flex;align-items:center;gap:9px;width:fit-content;max-width:calc(100% - 38px);min-height:44px;margin:0 0 18px;padding:10px 17px;border:1px solid var(--card-back);border-radius:24px;background:var(--card-note);color:var(--card-noteInk);font:600 15px/1.5 var(--body);text-align:left;transition:background .2s,transform .2s}.back-to-heart:hover{background:var(--card-frame);transform:translateX(-2px)}
+.back-to-heart{display:flex;align-items:center;gap:7px;width:fit-content;max-width:calc(100% - 38px);min-height:76px;margin:0 0 14px;padding:2px 6px 2px 0;border:0;border-radius:22px;background:transparent;color:var(--card-noteInk);font:700 14px/1.5 var(--body);text-align:left;cursor:pointer;touch-action:manipulation}
+.return-kitty{display:block;flex:0 0 82px;width:82px;height:76px;overflow:visible;transition:transform .3s}
+.return-kitty-label{position:relative;padding:10px 14px;border:1px solid var(--card-back);border-radius:18px 18px 18px 5px;background:var(--card-note);box-shadow:0 4px 10px #754b550c;transition:transform .3s,background .3s}
+.back-to-heart:hover .return-kitty,.back-to-heart:focus-visible .return-kitty{transform:translateY(-4px) rotate(-5deg)}
+.back-to-heart:hover .return-kitty-label{background:var(--card-frame);transform:translateX(2px)}
+.back-to-heart:active .return-kitty{transform:translateY(1px) rotate(3deg)}
+.back-to-heart:focus-visible{outline:3px solid var(--card-accent);outline-offset:5px}
+.return-kitty-tail{transform-origin:70px 73px;animation:return-kitty-wag 3s ease-in-out infinite}
+.return-kitty-eyes{transform-origin:49px 44px;animation:return-kitty-blink 6s ease-in-out infinite}
+@keyframes return-kitty-wag{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(9deg)}}
+@keyframes return-kitty-blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.12)}}
+@media(max-width:400px){.back-to-heart{gap:2px;font-size:12px}.return-kitty{flex-basis:68px;width:68px;height:65px}.return-kitty-label{padding:9px 10px}}
+@media(prefers-reduced-motion:reduce){.back-to-heart *{animation:none!important;transition:none!important}}
