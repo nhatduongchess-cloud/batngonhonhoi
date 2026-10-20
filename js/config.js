@@ -4,7 +4,7 @@ export const FEEDBACK_ENDPOINT =
 
 // Greeting video played after the heart is complete. Visitors can also choose a
 // local file, which stays on their device and is never uploaded.
-export const GREETING_VIDEO = 'assets/8d0234c0c3303a0cadc6.mp4';
+export const GREETING_VIDEO = 'assets/greeting-final2.mp4';
 
 // Background music, played in this order and starting again from the first track
 // after the last. Put the files in assets/music/ and use lowercase names without
